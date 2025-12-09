@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import { Outlet, useNavigate } from "react-router-dom";
+import { Outlet, useNavigate, useLocation } from "react-router-dom";
 import {
   Search,
   TrendingUp,
@@ -26,6 +26,7 @@ export default function Layout() {
   const [showDropdown, setShowDropdown] = useState(false);
   const searchContainerRef = useRef<HTMLDivElement>(null);
   const navigate = useNavigate();
+  const location = useLocation();
 
   // Theme State
   const [isDarkMode, setIsDarkMode] = useState(() => {
@@ -140,7 +141,14 @@ export default function Layout() {
           <button className="p-3 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-800/50 text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors">
             <Users className="w-5 h-5" />
           </button>
-          <button className="p-3 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-800/50 text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors">
+          <button
+            onClick={() => navigate("/ranking")}
+            className={`p-3 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-800/50 text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors ${
+              location.pathname === "/ranking"
+                ? "bg-slate-100 dark:bg-slate-800/50 text-sky-600 dark:text-sky-400"
+                : ""
+            }`}
+          >
             <Trophy className="w-5 h-5" />
           </button>
         </nav>

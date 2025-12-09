@@ -4,6 +4,7 @@ import MainPage from "./pages/MainPage";
 import CharacterDetailPage from "./pages/CharacterDetailPage";
 import DaevanionDetailPage from "./pages/DaevanionDetailPage";
 import DaevanionOptimizationPage from "./pages/DaevanionOptimizationPage";
+import RankingPage from "./pages/RankingPage";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<MainPage />} />
+          <Route path="ranking" element={<RankingPage />} />
           <Route path="character/:id" element={<CharacterDetailPage />} />
           <Route
             path="character/:characterId/daevanion"

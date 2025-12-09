@@ -198,3 +198,65 @@ export interface DaevanionDetailResponse {
   openStatEffectList: Array<{ desc: string }>;
   openSkillEffectList: Array<{ desc: string }>;
 }
+
+export interface RankingListItem {
+  rankingContentsType: number | null;
+  rankingContentsName: string | null;
+  rankingType: number;
+  rank: number;
+  characterId: string;
+  characterName: string;
+  classId: number;
+  className: string;
+  guildName: string | null;
+  point: number;
+  prevRank: number;
+  rankChange: number;
+  gradeId: number;
+  gradeName: string;
+  gradeIcon: string;
+  profileImage: string;
+  extraDataMap: {
+    killCount: number;
+    assistCount: number;
+    deathCount: number;
+  };
+}
+
+export interface RankingSeason {
+  rankingContentsType: number;
+  state: number;
+  groupName: string;
+  seasonNo: number;
+  prevSeasonNo: number;
+  startDate: string;
+  endDate: string;
+}
+
+export interface RankingResponse {
+  season: RankingSeason;
+  rankingList: RankingListItem[];
+  myRanking: RankingListItem | null;
+  friendRankingList: RankingListItem[] | null;
+}
+
+export interface ServerInfo {
+  raceId: number;
+  serverId: number;
+  serverName: string;
+  serverShortName: string;
+}
+
+export interface ServerListResponse {
+  serverList: ServerInfo[];
+}
+
+export interface ClassInfo {
+  id: number;
+  name: string;
+  text: string;
+}
+
+export interface ClassListResponse {
+  classList: ClassInfo[];
+}
