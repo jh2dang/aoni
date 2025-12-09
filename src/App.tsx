@@ -3,6 +3,7 @@ import Layout from "./components/Layout";
 import MainPage from "./pages/MainPage";
 import CharacterDetailPage from "./pages/CharacterDetailPage";
 import DaevanionDetailPage from "./pages/DaevanionDetailPage";
+import DaevanionOptimizationPage from "./pages/DaevanionOptimizationPage";
 
 function App() {
   return (
@@ -14,6 +15,10 @@ function App() {
           <Route
             path="character/:characterId/daevanion"
             element={<DaevanionDetailPage />}
+          />
+          <Route
+            path="character/:characterId/daevanion/optimization"
+            element={<DaevanionOptimizationPage />}
           />
         </Route>
       </Routes>

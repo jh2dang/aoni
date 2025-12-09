@@ -13,6 +13,7 @@ import {
   TrendingUp,
   TrendingDown,
   Image as ImageIcon,
+  Zap,
 } from "lucide-react";
 import type { CharacterSearchResult } from "../types";
 import { fetchCharacterInfo, fetchCharacterEquipment } from "../utils/api";
@@ -704,6 +705,20 @@ export default function CharacterDetailPage() {
                 <h3 className="text-lg font-bold text-slate-900 dark:text-white">
                   데바니온
                 </h3>
+                <button
+                  onClick={() => {
+                    navigate(`/character/${id}/daevanion/optimization`, {
+                      state: {
+                        character: location.state?.character,
+                        serverId: profile.serverId,
+                      },
+                    });
+                  }}
+                  className="px-4 py-2 rounded-lg bg-amber-500/10 dark:bg-amber-500/20 text-amber-600 dark:text-amber-400 border border-amber-500/20 dark:border-amber-500/30 hover:bg-amber-500/20 dark:hover:bg-amber-500/30 transition-colors text-sm font-medium flex items-center gap-2"
+                >
+                  <Zap className="w-4 h-4" />
+                  데바니온 최적화하기
+                </button>
               </div>
               <div className="grid grid-cols-2 gap-3">
                 {daevanion.map((board: any, i: number) => (

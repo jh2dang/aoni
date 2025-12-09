@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams, useLocation, useNavigate } from "react-router-dom";
-import { ArrowLeft, Filter } from "lucide-react";
+import { ArrowLeft, Filter, Zap } from "lucide-react";
 import { fetchDaevanionDetail, fetchCharacterInfo } from "../utils/api";
 import type { DaevanionDetailResponse, DaevanionNode } from "../types";
 
@@ -89,8 +89,9 @@ export default function DaevanionDetailPage() {
   const { characterId } = useParams<{ characterId: string }>();
   const location = useLocation();
   const navigate = useNavigate();
-  const [boardIds, setBoardIds] = useState<number[]>([71, 72, 73, 74, 75, 76]);
-  const [selectedBoardId, setSelectedBoardId] = useState<number>(71);
+  const [boardIds, setBoardIds] = useState<number[]>([]);
+  const [selectedBoardId, setSelectedBoardId] = useState<number | null>(null);
+  const [isLoadingBoards, setIsLoadingBoards] = useState(true);
   const [data, setData] = useState<DaevanionDetailResponse | null>(null);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
@@ -111,23 +112,34 @@ export default function DaevanionDetailPage() {
     if (!characterId) return;
 
     const loadCharacterInfo = async () => {
+      setIsLoadingBoards(true);
       try {
         const characterInfo = await fetchCharacterInfo(characterId, serverId);
         const className = characterInfo.profile.className;
+        console.log("Character class:", className); // 디버깅용
         const ids = getBoardIdsForClass(className);
-        setBoardIds(ids);
-        setSelectedBoardId(ids[0]); // 첫 번째 보드를 기본 선택
+        console.log("Board IDs for class:", ids); // 디버깅용
+        
+        if (ids.length > 0) {
+          setBoardIds(ids);
+          setSelectedBoardId(ids[0]); // 첫 번째 보드를 기본 선택
+        } else {
+          console.error("No board IDs found for class:", className);
+        }
       } catch (err) {
         console.error("Failed to load character info:", err);
-        // 에러 발생 시 기본값 사용
+        setError("캐릭터 정보를 불러오는데 실패했습니다.");
+      } finally {
+        setIsLoadingBoards(false);
       }
     };
 
     loadCharacterInfo();
   }, [characterId, serverId]);
 
+
   useEffect(() => {
-    if (!characterId) return;
+    if (!characterId || selectedBoardId === null) return;
 
     const loadData = async () => {
       setIsLoading(true);
@@ -206,7 +218,7 @@ export default function DaevanionDetailPage() {
 
   const openNodeCount = data?.nodeList.filter((n) => n.open === 1).length || 0;
 
-  if (isLoading) {
+  if (isLoadingBoards || (isLoading && selectedBoardId === null)) {
     return (
       <div className="min-h-[70vh] flex items-center justify-center">
         <div className="relative w-20 h-20">
@@ -322,6 +334,20 @@ export default function DaevanionDetailPage() {
               노드 상세
             </h3>
             <div className="flex items-center gap-4 flex-wrap">
+              <button
+                onClick={() => {
+                  navigate(`/character/${characterId}/daevanion/optimization`, {
+                    state: {
+                      character: location.state?.character,
+                      serverId: serverId,
+                    },
+                  });
+                }}
+                className="px-4 py-2 rounded-lg bg-amber-500/10 dark:bg-amber-500/20 text-amber-600 dark:text-amber-400 border border-amber-500/20 dark:border-amber-500/30 hover:bg-amber-500/20 dark:hover:bg-amber-500/30 transition-colors text-sm font-medium flex items-center gap-2"
+              >
+                <Zap className="w-4 h-4" />
+                데바니온 최적화하기
+              </button>
               <Filter className="w-4 h-4 text-slate-500 dark:text-slate-400" />
               <label className="flex items-center gap-2 cursor-pointer px-3 py-1.5 rounded-lg bg-slate-50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-700/50 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors">
                 <input
@@ -404,7 +430,7 @@ export default function DaevanionDetailPage() {
                       // Extract stat value from effect description
                       // For center node, always show board name
                       const statText = isCenterNode
-                        ? getBoardName(selectedBoardId)
+                        ? getBoardName(selectedBoardId!)
                         : node.effectList.length > 0 
                         ? node.effectList[0].desc 
                         : node.name || "";
@@ -433,7 +459,7 @@ export default function DaevanionDetailPage() {
                           {/* Always show board name for center node */}
                           {isCenterNode ? (
                             <div className="text-[9px] font-bold text-center leading-tight px-0.5 text-white drop-shadow-[0_0_3px_rgba(0,0,0,1)] drop-shadow-[0_2px_4px_rgba(0,0,0,0.9)]">
-                              {getBoardName(selectedBoardId)}
+                              {getBoardName(selectedBoardId!)}
                             </div>
                           ) : (
                             statText && !isEmpty && (

@@ -1,0 +1,2862 @@
+랭킹 검색 페이지를 만들어줘.
+
+
+https://aion2.plaync.com/api/ranking/list?lang=ko&rankingContentsType=1&rankingType=0&serverId=1001&characterId=
+위 url로 랭킹 정보를 가져오고있고, 응답은 다음과같아. (이 응답을 바탕으로 초기 화면으로 사용해줘)
+
+{
+    "season": {
+        "rankingContentsType": 1,
+        "state": 1,
+        "groupName": "Season_Main_Live",
+        "seasonNo": 1,
+        "prevSeasonNo": 11,
+        "startDate": "2025-11-18T09:00:00+09:00",
+        "endDate": "2026-01-21T05:00:00+09:00"
+    },
+    "rankingList": [
+        {
+            "rankingContentsType": null,
+            "rankingContentsName": null,
+            "rankingType": 0,
+            "rank": 1,
+            "characterId": "A1pIWbd0UKoTYJ2XbL_Cw86w93CuSMhKlOUf2boNa10=",
+            "characterName": "멸",
+            "classId": 2,
+            "className": "검성",
+            "guildName": "용",
+            "point": 4587676,
+            "prevRank": 0,
+            "rankChange": 0,
+            "gradeId": 1,
+            "gradeName": "총사령관",
+            "gradeIcon": "https://assets.playnccdn.com/static-aion2-gamedata/resources/UT_Ranking_Grade_Abyss_Chief_Commander_02.png",
+            "profileImage": "https://profileimg.plaync.com/game_profile_images/aion2/images?gameServerKey=1001&charKey=281756451687375846",
+            "extraDataMap": {
+                "deathCount": 465,
+                "assistCount": 3008,
+                "killCount": 14472
+            }
+        },
+        {
+            "rankingContentsType": null,
+            "rankingContentsName": null,
+            "rankingType": 0,
+            "rank": 2,
+            "characterId": "A1pIWbd0UKoTYJ2XbL_CwwHXbQIO-Vu7MZaXBAuFQ9c=",
+            "characterName": "우레",
+            "classId": 5,
+            "className": "살성",
+            "guildName": "용",
+            "point": 2831775,
+            "prevRank": 0,
+            "rankChange": 0,
+            "gradeId": 2,
+            "gradeName": "사령관",
+            "gradeIcon": "https://assets.playnccdn.com/static-aion2-gamedata/resources/UT_Ranking_Grade_Abyss_Chief_Commander_01.png",
+            "profileImage": "https://profileimg.plaync.com/game_profile_images/aion2/images?gameServerKey=1001&charKey=281756451687380180",
+            "extraDataMap": {
+                "deathCount": 495,
+                "assistCount": 1693,
+                "killCount": 9380
+            }
+        },
+        {
+            "rankingContentsType": null,
+            "rankingContentsName": null,
+            "rankingType": 0,
+            "rank": 3,
+            "characterId": "A1pIWbd0UKoTYJ2XbL_CwzbeFha_8obQX82P0bJGjcw=",
+            "characterName": "용",
+            "classId": 2,
+            "className": "검성",
+            "guildName": "용",
+            "point": 2791007,
+            "prevRank": 0,
+            "rankChange": 0,
+            "gradeId": 2,
+            "gradeName": "사령관",
+            "gradeIcon": "https://assets.playnccdn.com/static-aion2-gamedata/resources/UT_Ranking_Grade_Abyss_Chief_Commander_01.png",
+            "profileImage": "https://profileimg.plaync.com/game_profile_images/aion2/images?gameServerKey=1001&charKey=281756451687373133",
+            "extraDataMap": {
+                "deathCount": 1007,
+                "assistCount": 4617,
+                "killCount": 16309
+            }
+        },
+        {
+            "rankingContentsType": null,
+            "rankingContentsName": null,
+            "rankingType": 0,
+            "rank": 4,
+            "characterId": "A1pIWbd0UKoTYJ2XbL_Cw4WNU5IgqaZ_Xw_DLWM3oxI=",
+            "characterName": "전하",
+            "classId": 5,
+            "className": "살성",
+            "guildName": "황제",
+            "point": 2568321,
+            "prevRank": 0,
+            "rankChange": 0,
+            "gradeId": 3,
+            "gradeName": "대장군",
+            "gradeIcon": "https://assets.playnccdn.com/static-aion2-gamedata/resources/UT_Ranking_Grade_Abyss_General_02.png",
+            "profileImage": "https://profileimg.plaync.com/game_profile_images/aion2/images?gameServerKey=1001&charKey=281756451687373068",
+            "extraDataMap": {
+                "deathCount": 253,
+                "assistCount": 1134,
+                "killCount": 4513
+            }
+        },
+        {
+            "rankingContentsType": null,
+            "rankingContentsName": null,
+            "rankingType": 0,
+            "rank": 5,
+            "characterId": "A1pIWbd0UKoTYJ2XbL_CwwQj55MAHQfed3hP0nuNz40=",
+            "characterName": "운이",
+            "classId": 5,
+            "className": "살성",
+            "guildName": "운이",
+            "point": 2374111,
+            "prevRank": 0,
+            "rankChange": 0,
+            "gradeId": 3,
+            "gradeName": "대장군",
+            "gradeIcon": "https://assets.playnccdn.com/static-aion2-gamedata/resources/UT_Ranking_Grade_Abyss_General_02.png",
+            "profileImage": "https://profileimg.plaync.com/game_profile_images/aion2/images?gameServerKey=1001&charKey=281756451687389538",
+            "extraDataMap": {
+                "deathCount": 479,
+                "assistCount": 672,
+                "killCount": 4478
+            }
+        },
+        {
+            "rankingContentsType": null,
+            "rankingContentsName": null,
+            "rankingType": 0,
+            "rank": 6,
+            "characterId": "A1pIWbd0UKoTYJ2XbL_Cw06sBOFaSclR1xrYewO_2go=",
+            "characterName": "빛",
+            "classId": 2,
+            "className": "검성",
+            "guildName": "천",
+            "point": 2172189,
+            "prevRank": 0,
+            "rankChange": 0,
+            "gradeId": 3,
+            "gradeName": "대장군",
+            "gradeIcon": "https://assets.playnccdn.com/static-aion2-gamedata/resources/UT_Ranking_Grade_Abyss_General_02.png",
+            "profileImage": "https://profileimg.plaync.com/game_profile_images/aion2/images?gameServerKey=1001&charKey=281756451687381059",
+            "extraDataMap": {
+                "deathCount": 532,
+                "assistCount": 1419,
+                "killCount": 8055
+            }
+        },
+        {
+            "rankingContentsType": null,
+            "rankingContentsName": null,
+            "rankingType": 0,
+            "rank": 7,
+            "characterId": "A1pIWbd0UKoTYJ2XbL_Cw-LO_TP5X3G-sJSl3ecqSzg=",
+            "characterName": "로투스",
+            "classId": 8,
+            "className": "치유성",
+            "guildName": "용",
+            "point": 1921110,
+            "prevRank": 0,
+            "rankChange": 0,
+            "gradeId": 4,
+            "gradeName": "장군",
+            "gradeIcon": "https://assets.playnccdn.com/static-aion2-gamedata/resources/UT_Ranking_Grade_Abyss_General_01.png",
+            "profileImage": "https://profileimg.plaync.com/game_profile_images/aion2/images?gameServerKey=1001&charKey=281756451687368988",
+            "extraDataMap": {
+                "deathCount": 470,
+                "assistCount": 6178,
+                "killCount": 5465
+            }
+        },
+        {
+            "rankingContentsType": null,
+            "rankingContentsName": null,
+            "rankingType": 0,
+            "rank": 8,
+            "characterId": "A1pIWbd0UKoTYJ2XbL_Cw5JVs2rY9MDd3ygKSTgUa5M=",
+            "characterName": "필메",
+            "classId": 5,
+            "className": "살성",
+            "guildName": "용",
+            "point": 1841519,
+            "prevRank": 0,
+            "rankChange": 0,
+            "gradeId": 4,
+            "gradeName": "장군",
+            "gradeIcon": "https://assets.playnccdn.com/static-aion2-gamedata/resources/UT_Ranking_Grade_Abyss_General_01.png",
+            "profileImage": "https://profileimg.plaync.com/game_profile_images/aion2/images?gameServerKey=1001&charKey=281756451687373474",
+            "extraDataMap": {
+                "deathCount": 389,
+                "assistCount": 1069,
+                "killCount": 4957
+            }
+        },
+        {
+            "rankingContentsType": null,
+            "rankingContentsName": null,
+            "rankingType": 0,
+            "rank": 9,
+            "characterId": "A1pIWbd0UKoTYJ2XbL_CwxVIw9QIVYkGAK60J5zUpj8=",
+            "characterName": "로즈",
+            "classId": 8,
+            "className": "치유성",
+            "guildName": "용",
+            "point": 1468802,
+            "prevRank": 0,
+            "rankChange": 0,
+            "gradeId": 6,
+            "gradeName": "4성장교",
+            "gradeIcon": "https://assets.playnccdn.com/static-aion2-gamedata/resources/UT_Ranking_Grade_Abyss_Officer_04.png",
+            "profileImage": "https://profileimg.plaync.com/game_profile_images/aion2/images?gameServerKey=1001&charKey=281756451687382107",
+            "extraDataMap": {
+                "deathCount": 267,
+                "assistCount": 4068,
+                "killCount": 1305
+            }
+        },
+        {
+            "rankingContentsType": null,
+            "rankingContentsName": null,
+            "rankingType": 0,
+            "rank": 10,
+            "characterId": "A1pIWbd0UKoTYJ2XbL_Cw3F3pP-Sr7t-RA917_ipJmw=",
+            "characterName": "검은검객v",
+            "classId": 5,
+            "className": "살성",
+            "guildName": "용",
+            "point": 1426959,
+            "prevRank": 0,
+            "rankChange": 0,
+            "gradeId": 6,
+            "gradeName": "4성장교",
+            "gradeIcon": "https://assets.playnccdn.com/static-aion2-gamedata/resources/UT_Ranking_Grade_Abyss_Officer_04.png",
+            "profileImage": "https://profileimg.plaync.com/game_profile_images/aion2/images?gameServerKey=1001&charKey=281756451687373787",
+            "extraDataMap": {
+                "deathCount": 527,
+                "assistCount": 1073,
+                "killCount": 6172
+            }
+        },
+        {
+            "rankingContentsType": null,
+            "rankingContentsName": null,
+            "rankingType": 0,
+            "rank": 11,
+            "characterId": "A1pIWbd0UKoTYJ2XbL_Cw1BJPhevkxtx7HmfhrSuT2c=",
+            "characterName": "에슥가",
+            "classId": 4,
+            "className": "궁성",
+            "guildName": "황제",
+            "point": 1272842,
+            "prevRank": 0,
+            "rankChange": 0,
+            "gradeId": 7,
+            "gradeName": "3성장교",
+            "gradeIcon": "https://assets.playnccdn.com/static-aion2-gamedata/resources/UT_Ranking_Grade_Abyss_Officer_03.png",
+            "profileImage": "https://profileimg.plaync.com/game_profile_images/aion2/images?gameServerKey=1001&charKey=281756451687388250",
+            "extraDataMap": {
+                "deathCount": 368,
+                "assistCount": 3844,
+                "killCount": 3542
+            }
+        },
+        {
+            "rankingContentsType": null,
+            "rankingContentsName": null,
+            "rankingType": 0,
+            "rank": 12,
+            "characterId": "A1pIWbd0UKoTYJ2XbL_Cw_eAdTnOQptcB3EwBxt5koA=",
+            "characterName": "실성태",
+            "classId": 5,
+            "className": "살성",
+            "guildName": "용",
+            "point": 1226942,
+            "prevRank": 0,
+            "rankChange": 0,
+            "gradeId": 7,
+            "gradeName": "3성장교",
+            "gradeIcon": "https://assets.playnccdn.com/static-aion2-gamedata/resources/UT_Ranking_Grade_Abyss_Officer_03.png",
+            "profileImage": "https://profileimg.plaync.com/game_profile_images/aion2/images?gameServerKey=1001&charKey=281756451687414091",
+            "extraDataMap": {
+                "deathCount": 622,
+                "assistCount": 1072,
+                "killCount": 3458
+            }
+        },
+        {
+            "rankingContentsType": null,
+            "rankingContentsName": null,
+            "rankingType": 0,
+            "rank": 13,
+            "characterId": "A1pIWbd0UKoTYJ2XbL_Cw0uZEoQmGcDS6mGEewt4DZU=",
+            "characterName": "진실",
+            "classId": 4,
+            "className": "궁성",
+            "guildName": "달",
+            "point": 1226344,
+            "prevRank": 0,
+            "rankChange": 2,
+            "gradeId": 7,
+            "gradeName": "3성장교",
+            "gradeIcon": "https://assets.playnccdn.com/static-aion2-gamedata/resources/UT_Ranking_Grade_Abyss_Officer_03.png",
+            "profileImage": "https://profileimg.plaync.com/game_profile_images/aion2/images?gameServerKey=1001&charKey=281756451687372423",
+            "extraDataMap": {
+                "deathCount": 150,
+                "assistCount": 5744,
+                "killCount": 3998
+            }
+        },
+        {
+            "rankingContentsType": null,
+            "rankingContentsName": null,
+            "rankingType": 0,
+            "rank": 14,
+            "characterId": "A1pIWbd0UKoTYJ2XbL_Cw7ePxQtxtqjWP50EDWseRN8=",
+            "characterName": "엄",
+            "classId": 6,
+            "className": "정령성",
+            "guildName": "아사단",
+            "point": 1223621,
+            "prevRank": 0,
+            "rankChange": -1,
+            "gradeId": 7,
+            "gradeName": "3성장교",
+            "gradeIcon": "https://assets.playnccdn.com/static-aion2-gamedata/resources/UT_Ranking_Grade_Abyss_Officer_03.png",
+            "profileImage": "https://profileimg.plaync.com/game_profile_images/aion2/images?gameServerKey=1001&charKey=281756451687375022",
+            "extraDataMap": {
+                "deathCount": 388,
+                "assistCount": 3766,
+                "killCount": 2177
+            }
+        },
+        {
+            "rankingContentsType": null,
+            "rankingContentsName": null,
+            "rankingType": 0,
+            "rank": 15,
+            "characterId": "A1pIWbd0UKoTYJ2XbL_Cw7gjMGzpzhdcFimhqsvzDME=",
+            "characterName": "고리",
+            "classId": 5,
+            "className": "살성",
+            "guildName": "용",
+            "point": 1195304,
+            "prevRank": 0,
+            "rankChange": -1,
+            "gradeId": 7,
+            "gradeName": "3성장교",
+            "gradeIcon": "https://assets.playnccdn.com/static-aion2-gamedata/resources/UT_Ranking_Grade_Abyss_Officer_03.png",
+            "profileImage": "https://profileimg.plaync.com/game_profile_images/aion2/images?gameServerKey=1001&charKey=281756451687385148",
+            "extraDataMap": {
+                "deathCount": 450,
+                "assistCount": 1443,
+                "killCount": 3943
+            }
+        },
+        {
+            "rankingContentsType": null,
+            "rankingContentsName": null,
+            "rankingType": 0,
+            "rank": 16,
+            "characterId": "A1pIWbd0UKoTYJ2XbL_Cw68Ee03k5bXpsJVlU9KgFbo=",
+            "characterName": "별의전사커비",
+            "classId": 2,
+            "className": "검성",
+            "guildName": "Tooniverse",
+            "point": 1061405,
+            "prevRank": 0,
+            "rankChange": 0,
+            "gradeId": 8,
+            "gradeName": "2성장교",
+            "gradeIcon": "https://assets.playnccdn.com/static-aion2-gamedata/resources/UT_Ranking_Grade_Abyss_Officer_02.png",
+            "profileImage": "https://profileimg.plaync.com/game_profile_images/aion2/images?gameServerKey=1001&charKey=281756451687380539",
+            "extraDataMap": {
+                "deathCount": 250,
+                "assistCount": 1176,
+                "killCount": 1997
+            }
+        },
+        {
+            "rankingContentsType": null,
+            "rankingContentsName": null,
+            "rankingType": 0,
+            "rank": 17,
+            "characterId": "A1pIWbd0UKoTYJ2XbL_Cw7zlkbjgMGWq2JccR4U0eVg=",
+            "characterName": "오제",
+            "classId": 3,
+            "className": "수호성",
+            "guildName": "달",
+            "point": 1044061,
+            "prevRank": 0,
+            "rankChange": 0,
+            "gradeId": 8,
+            "gradeName": "2성장교",
+            "gradeIcon": "https://assets.playnccdn.com/static-aion2-gamedata/resources/UT_Ranking_Grade_Abyss_Officer_02.png",
+            "profileImage": "https://profileimg.plaync.com/game_profile_images/aion2/images?gameServerKey=1001&charKey=281756451687372885",
+            "extraDataMap": {
+                "deathCount": 571,
+                "assistCount": 2991,
+                "killCount": 3401
+            }
+        },
+        {
+            "rankingContentsType": null,
+            "rankingContentsName": null,
+            "rankingType": 0,
+            "rank": 18,
+            "characterId": "A1pIWbd0UKoTYJ2XbL_Cw1LkKvE0WXA4fJDeb1IjnQ8=",
+            "characterName": "omong",
+            "classId": 5,
+            "className": "살성",
+            "guildName": "이제뭐함",
+            "point": 1022669,
+            "prevRank": 0,
+            "rankChange": 0,
+            "gradeId": 8,
+            "gradeName": "2성장교",
+            "gradeIcon": "https://assets.playnccdn.com/static-aion2-gamedata/resources/UT_Ranking_Grade_Abyss_Officer_02.png",
+            "profileImage": "https://profileimg.plaync.com/game_profile_images/aion2/images?gameServerKey=1001&charKey=281756451687430694",
+            "extraDataMap": {
+                "deathCount": 517,
+                "assistCount": 413,
+                "killCount": 1994
+            }
+        },
+        {
+            "rankingContentsType": null,
+            "rankingContentsName": null,
+            "rankingType": 0,
+            "rank": 19,
+            "characterId": "A1pIWbd0UKoTYJ2XbL_Cw7MdLFkpOGPTEyzzYuxBenU=",
+            "characterName": "무",
+            "classId": 2,
+            "className": "검성",
+            "guildName": "숲",
+            "point": 977330,
+            "prevRank": 0,
+            "rankChange": 0,
+            "gradeId": 8,
+            "gradeName": "2성장교",
+            "gradeIcon": "https://assets.playnccdn.com/static-aion2-gamedata/resources/UT_Ranking_Grade_Abyss_Officer_02.png",
+            "profileImage": "https://profileimg.plaync.com/game_profile_images/aion2/images?gameServerKey=1001&charKey=281756451687397222",
+            "extraDataMap": {
+                "deathCount": 377,
+                "assistCount": 1125,
+                "killCount": 1046
+            }
+        },
+        {
+            "rankingContentsType": null,
+            "rankingContentsName": null,
+            "rankingType": 0,
+            "rank": 20,
+            "characterId": "A1pIWbd0UKoTYJ2XbL_Cw_j-6zBczPwFI3YGDmS3HT4=",
+            "characterName": "수호민수",
+            "classId": 3,
+            "className": "수호성",
+            "guildName": "황제",
+            "point": 963117,
+            "prevRank": 0,
+            "rankChange": 0,
+            "gradeId": 8,
+            "gradeName": "2성장교",
+            "gradeIcon": "https://assets.playnccdn.com/static-aion2-gamedata/resources/UT_Ranking_Grade_Abyss_Officer_02.png",
+            "profileImage": "https://profileimg.plaync.com/game_profile_images/aion2/images?gameServerKey=1001&charKey=281756451687391012",
+            "extraDataMap": {
+                "deathCount": 257,
+                "assistCount": 2196,
+                "killCount": 2380
+            }
+        },
+        {
+            "rankingContentsType": null,
+            "rankingContentsName": null,
+            "rankingType": 0,
+            "rank": 21,
+            "characterId": "A1pIWbd0UKoTYJ2XbL_Cw9_dMhBy_1TRJsR_yxwN8Mc=",
+            "characterName": "배신",
+            "classId": 5,
+            "className": "살성",
+            "guildName": null,
+            "point": 940030,
+            "prevRank": 0,
+            "rankChange": 0,
+            "gradeId": 8,
+            "gradeName": "2성장교",
+            "gradeIcon": "https://assets.playnccdn.com/static-aion2-gamedata/resources/UT_Ranking_Grade_Abyss_Officer_02.png",
+            "profileImage": "https://profileimg.plaync.com/game_profile_images/aion2/images?gameServerKey=1001&charKey=281756451687369963",
+            "extraDataMap": {
+                "deathCount": 605,
+                "assistCount": 1577,
+                "killCount": 2900
+            }
+        },
+        {
+            "rankingContentsType": null,
+            "rankingContentsName": null,
+            "rankingType": 0,
+            "rank": 22,
+            "characterId": "A1pIWbd0UKoTYJ2XbL_CwyunGBxL1X9OZAa-zTZuuzg=",
+            "characterName": "다윤",
+            "classId": 7,
+            "className": "마도성",
+            "guildName": "용",
+            "point": 885457,
+            "prevRank": 0,
+            "rankChange": 0,
+            "gradeId": 9,
+            "gradeName": "1성장교",
+            "gradeIcon": "https://assets.playnccdn.com/static-aion2-gamedata/resources/UT_Ranking_Grade_Abyss_Officer_01.png",
+            "profileImage": "https://profileimg.plaync.com/game_profile_images/aion2/images?gameServerKey=1001&charKey=281756451687368616",
+            "extraDataMap": {
+                "deathCount": 386,
+                "assistCount": 3602,
+                "killCount": 2247
+            }
+        },
+        {
+            "rankingContentsType": null,
+            "rankingContentsName": null,
+            "rankingType": 0,
+            "rank": 23,
+            "characterId": "A1pIWbd0UKoTYJ2XbL_CwwTLK0gNnnns8mzMjaODq0A=",
+            "characterName": "샷",
+            "classId": 5,
+            "className": "살성",
+            "guildName": "라",
+            "point": 864836,
+            "prevRank": 0,
+            "rankChange": 0,
+            "gradeId": 9,
+            "gradeName": "1성장교",
+            "gradeIcon": "https://assets.playnccdn.com/static-aion2-gamedata/resources/UT_Ranking_Grade_Abyss_Officer_01.png",
+            "profileImage": "https://profileimg.plaync.com/game_profile_images/aion2/images?gameServerKey=1001&charKey=281756451687400006",
+            "extraDataMap": {
+                "deathCount": 318,
+                "assistCount": 704,
+                "killCount": 2911
+            }
+        },
+        {
+            "rankingContentsType": null,
+            "rankingContentsName": null,
+            "rankingType": 0,
+            "rank": 24,
+            "characterId": "A1pIWbd0UKoTYJ2XbL_Cw9fFnuqTm4O9dSe6ZK10dVA=",
+            "characterName": "철새",
+            "classId": 5,
+            "className": "살성",
+            "guildName": "YooY",
+            "point": 858226,
+            "prevRank": 0,
+            "rankChange": 0,
+            "gradeId": 9,
+            "gradeName": "1성장교",
+            "gradeIcon": "https://assets.playnccdn.com/static-aion2-gamedata/resources/UT_Ranking_Grade_Abyss_Officer_01.png",
+            "profileImage": "https://profileimg.plaync.com/game_profile_images/aion2/images?gameServerKey=1001&charKey=281756451687374367",
+            "extraDataMap": {
+                "deathCount": 530,
+                "assistCount": 1950,
+                "killCount": 3754
+            }
+        },
+        {
+            "rankingContentsType": null,
+            "rankingContentsName": null,
+            "rankingType": 0,
+            "rank": 25,
+            "characterId": "A1pIWbd0UKoTYJ2XbL_Cww_AlcJAAVZE6rr-dxTP2b4=",
+            "characterName": "인리",
+            "classId": 2,
+            "className": "검성",
+            "guildName": "잉",
+            "point": 848685,
+            "prevRank": 0,
+            "rankChange": 0,
+            "gradeId": 9,
+            "gradeName": "1성장교",
+            "gradeIcon": "https://assets.playnccdn.com/static-aion2-gamedata/resources/UT_Ranking_Grade_Abyss_Officer_01.png",
+            "profileImage": "https://profileimg.plaync.com/game_profile_images/aion2/images?gameServerKey=1001&charKey=281756451687373276",
+            "extraDataMap": {
+                "deathCount": 494,
+                "assistCount": 2100,
+                "killCount": 2715
+            }
+        },
+        {
+            "rankingContentsType": null,
+            "rankingContentsName": null,
+            "rankingType": 0,
+            "rank": 26,
+            "characterId": "A1pIWbd0UKoTYJ2XbL_Cw_eOgoJHYPGNJDqETbBAnAI=",
+            "characterName": "장판덕",
+            "classId": 6,
+            "className": "정령성",
+            "guildName": "달",
+            "point": 830560,
+            "prevRank": 0,
+            "rankChange": 1,
+            "gradeId": 9,
+            "gradeName": "1성장교",
+            "gradeIcon": "https://assets.playnccdn.com/static-aion2-gamedata/resources/UT_Ranking_Grade_Abyss_Officer_01.png",
+            "profileImage": "https://profileimg.plaync.com/game_profile_images/aion2/images?gameServerKey=1001&charKey=281756451687371306",
+            "extraDataMap": {
+                "deathCount": 426,
+                "assistCount": 1870,
+                "killCount": 1597
+            }
+        },
+        {
+            "rankingContentsType": null,
+            "rankingContentsName": null,
+            "rankingType": 0,
+            "rank": 27,
+            "characterId": "A1pIWbd0UKoTYJ2XbL_Cw6xIl4VtYiA67woQxNSVLro=",
+            "characterName": "야르",
+            "classId": 8,
+            "className": "치유성",
+            "guildName": "달",
+            "point": 830311,
+            "prevRank": 0,
+            "rankChange": -1,
+            "gradeId": 9,
+            "gradeName": "1성장교",
+            "gradeIcon": "https://assets.playnccdn.com/static-aion2-gamedata/resources/UT_Ranking_Grade_Abyss_Officer_01.png",
+            "profileImage": "https://profileimg.plaync.com/game_profile_images/aion2/images?gameServerKey=1001&charKey=281756451687368434",
+            "extraDataMap": {
+                "deathCount": 327,
+                "assistCount": 5975,
+                "killCount": 1942
+            }
+        },
+        {
+            "rankingContentsType": null,
+            "rankingContentsName": null,
+            "rankingType": 0,
+            "rank": 28,
+            "characterId": "A1pIWbd0UKoTYJ2XbL_Cw0MHKrdGrzTtVPXcGA-k1eA=",
+            "characterName": "후",
+            "classId": 3,
+            "className": "수호성",
+            "guildName": "아사단",
+            "point": 827037,
+            "prevRank": 0,
+            "rankChange": 0,
+            "gradeId": 9,
+            "gradeName": "1성장교",
+            "gradeIcon": "https://assets.playnccdn.com/static-aion2-gamedata/resources/UT_Ranking_Grade_Abyss_Officer_01.png",
+            "profileImage": "https://profileimg.plaync.com/game_profile_images/aion2/images?gameServerKey=1001&charKey=281756451687410290",
+            "extraDataMap": {
+                "deathCount": 497,
+                "assistCount": 2507,
+                "killCount": 2249
+            }
+        },
+        {
+            "rankingContentsType": null,
+            "rankingContentsName": null,
+            "rankingType": 0,
+            "rank": 29,
+            "characterId": "A1pIWbd0UKoTYJ2XbL_Cw2ZKjeYJJvl0NGkkAVi912U=",
+            "characterName": "특별한형",
+            "classId": 8,
+            "className": "치유성",
+            "guildName": null,
+            "point": 822785,
+            "prevRank": 0,
+            "rankChange": 0,
+            "gradeId": 9,
+            "gradeName": "1성장교",
+            "gradeIcon": "https://assets.playnccdn.com/static-aion2-gamedata/resources/UT_Ranking_Grade_Abyss_Officer_01.png",
+            "profileImage": "https://profileimg.plaync.com/game_profile_images/aion2/images?gameServerKey=1001&charKey=281756451687370841",
+            "extraDataMap": {
+                "deathCount": 324,
+                "assistCount": 1440,
+                "killCount": 1612
+            }
+        },
+        {
+            "rankingContentsType": null,
+            "rankingContentsName": null,
+            "rankingType": 0,
+            "rank": 30,
+            "characterId": "A1pIWbd0UKoTYJ2XbL_Cw-CpHffxBZVMX3jYV_zMNrU=",
+            "characterName": "휘",
+            "classId": 7,
+            "className": "마도성",
+            "guildName": "황제",
+            "point": 820245,
+            "prevRank": 0,
+            "rankChange": 0,
+            "gradeId": 9,
+            "gradeName": "1성장교",
+            "gradeIcon": "https://assets.playnccdn.com/static-aion2-gamedata/resources/UT_Ranking_Grade_Abyss_Officer_01.png",
+            "profileImage": "https://profileimg.plaync.com/game_profile_images/aion2/images?gameServerKey=1001&charKey=281756451687390628",
+            "extraDataMap": {
+                "deathCount": 493,
+                "assistCount": 3564,
+                "killCount": 3424
+            }
+        },
+        {
+            "rankingContentsType": null,
+            "rankingContentsName": null,
+            "rankingType": 0,
+            "rank": 31,
+            "characterId": "A1pIWbd0UKoTYJ2XbL_CwwLBuoLpoBC5lJt4JUNvJ1Y=",
+            "characterName": "듄",
+            "classId": 2,
+            "className": "검성",
+            "guildName": "달",
+            "point": 809913,
+            "prevRank": 0,
+            "rankChange": 0,
+            "gradeId": 9,
+            "gradeName": "1성장교",
+            "gradeIcon": "https://assets.playnccdn.com/static-aion2-gamedata/resources/UT_Ranking_Grade_Abyss_Officer_01.png",
+            "profileImage": "https://profileimg.plaync.com/game_profile_images/aion2/images?gameServerKey=1001&charKey=281756451687370314",
+            "extraDataMap": {
+                "deathCount": 295,
+                "assistCount": 2129,
+                "killCount": 1686
+            }
+        },
+        {
+            "rankingContentsType": null,
+            "rankingContentsName": null,
+            "rankingType": 0,
+            "rank": 32,
+            "characterId": "A1pIWbd0UKoTYJ2XbL_Cwz2cg5VXwJK4u5YhDUu-KYI=",
+            "characterName": "베디",
+            "classId": 5,
+            "className": "살성",
+            "guildName": "달",
+            "point": 800528,
+            "prevRank": 0,
+            "rankChange": 0,
+            "gradeId": 9,
+            "gradeName": "1성장교",
+            "gradeIcon": "https://assets.playnccdn.com/static-aion2-gamedata/resources/UT_Ranking_Grade_Abyss_Officer_01.png",
+            "profileImage": "https://profileimg.plaync.com/game_profile_images/aion2/images?gameServerKey=1001&charKey=281756451687382288",
+            "extraDataMap": {
+                "deathCount": 360,
+                "assistCount": 1525,
+                "killCount": 2020
+            }
+        },
+        {
+            "rankingContentsType": null,
+            "rankingContentsName": null,
+            "rankingType": 0,
+            "rank": 33,
+            "characterId": "A1pIWbd0UKoTYJ2XbL_Cw1VnlFsBj7NmATPVDEiWVAY=",
+            "characterName": "넌몹",
+            "classId": 5,
+            "className": "살성",
+            "guildName": "숲",
+            "point": 797329,
+            "prevRank": 0,
+            "rankChange": 0,
+            "gradeId": 9,
+            "gradeName": "1성장교",
+            "gradeIcon": "https://assets.playnccdn.com/static-aion2-gamedata/resources/UT_Ranking_Grade_Abyss_Officer_01.png",
+            "profileImage": "https://profileimg.plaync.com/game_profile_images/aion2/images?gameServerKey=1001&charKey=281756451687424616",
+            "extraDataMap": {
+                "deathCount": 642,
+                "assistCount": 762,
+                "killCount": 1754
+            }
+        },
+        {
+            "rankingContentsType": null,
+            "rankingContentsName": null,
+            "rankingType": 0,
+            "rank": 34,
+            "characterId": "A1pIWbd0UKoTYJ2XbL_CwzWvH56cxP2cWZ9b98Jkj2k=",
+            "characterName": "무기",
+            "classId": 4,
+            "className": "궁성",
+            "guildName": "용",
+            "point": 790281,
+            "prevRank": 0,
+            "rankChange": 0,
+            "gradeId": 9,
+            "gradeName": "1성장교",
+            "gradeIcon": "https://assets.playnccdn.com/static-aion2-gamedata/resources/UT_Ranking_Grade_Abyss_Officer_01.png",
+            "profileImage": "https://profileimg.plaync.com/game_profile_images/aion2/images?gameServerKey=1001&charKey=281756451687414037",
+            "extraDataMap": {
+                "deathCount": 398,
+                "assistCount": 2776,
+                "killCount": 2734
+            }
+        },
+        {
+            "rankingContentsType": null,
+            "rankingContentsName": null,
+            "rankingType": 0,
+            "rank": 35,
+            "characterId": "A1pIWbd0UKoTYJ2XbL_Cw2dgPk2ZalXtOUm1w4IgicE=",
+            "characterName": "사진",
+            "classId": 3,
+            "className": "수호성",
+            "guildName": null,
+            "point": 785120,
+            "prevRank": 0,
+            "rankChange": 0,
+            "gradeId": 9,
+            "gradeName": "1성장교",
+            "gradeIcon": "https://assets.playnccdn.com/static-aion2-gamedata/resources/UT_Ranking_Grade_Abyss_Officer_01.png",
+            "profileImage": "https://profileimg.plaync.com/game_profile_images/aion2/images?gameServerKey=1001&charKey=281756451687394824",
+            "extraDataMap": {
+                "deathCount": 362,
+                "assistCount": 2782,
+                "killCount": 2468
+            }
+        },
+        {
+            "rankingContentsType": null,
+            "rankingContentsName": null,
+            "rankingType": 0,
+            "rank": 36,
+            "characterId": "A1pIWbd0UKoTYJ2XbL_Cw21M4rA6JSCPTCWsvWesk7k=",
+            "characterName": "뜨뜨",
+            "classId": 5,
+            "className": "살성",
+            "guildName": "용",
+            "point": 783479,
+            "prevRank": 0,
+            "rankChange": 0,
+            "gradeId": 9,
+            "gradeName": "1성장교",
+            "gradeIcon": "https://assets.playnccdn.com/static-aion2-gamedata/resources/UT_Ranking_Grade_Abyss_Officer_01.png",
+            "profileImage": "https://profileimg.plaync.com/game_profile_images/aion2/images?gameServerKey=1001&charKey=281756451687410691",
+            "extraDataMap": {
+                "deathCount": 748,
+                "assistCount": 831,
+                "killCount": 3139
+            }
+        },
+        {
+            "rankingContentsType": null,
+            "rankingContentsName": null,
+            "rankingType": 0,
+            "rank": 37,
+            "characterId": "A1pIWbd0UKoTYJ2XbL_Cw7c0I5YWF9PWsZ8hzCpAf4U=",
+            "characterName": "깜보",
+            "classId": 7,
+            "className": "마도성",
+            "guildName": "와쏘베쏘",
+            "point": 773019,
+            "prevRank": 0,
+            "rankChange": 0,
+            "gradeId": 9,
+            "gradeName": "1성장교",
+            "gradeIcon": "https://assets.playnccdn.com/static-aion2-gamedata/resources/UT_Ranking_Grade_Abyss_Officer_01.png",
+            "profileImage": "https://profileimg.plaync.com/game_profile_images/aion2/images?gameServerKey=1001&charKey=281756451687392988",
+            "extraDataMap": {
+                "deathCount": 341,
+                "assistCount": 1852,
+                "killCount": 1583
+            }
+        },
+        {
+            "rankingContentsType": null,
+            "rankingContentsName": null,
+            "rankingType": 0,
+            "rank": 38,
+            "characterId": "A1pIWbd0UKoTYJ2XbL_Cw92lToklfMfP3qJ1OFDQsxs=",
+            "characterName": "조커",
+            "classId": 2,
+            "className": "검성",
+            "guildName": "레드",
+            "point": 754877,
+            "prevRank": 0,
+            "rankChange": 0,
+            "gradeId": 9,
+            "gradeName": "1성장교",
+            "gradeIcon": "https://assets.playnccdn.com/static-aion2-gamedata/resources/UT_Ranking_Grade_Abyss_Officer_01.png",
+            "profileImage": "https://profileimg.plaync.com/game_profile_images/aion2/images?gameServerKey=1001&charKey=281756451687373951",
+            "extraDataMap": {
+                "deathCount": 336,
+                "assistCount": 1157,
+                "killCount": 1415
+            }
+        },
+        {
+            "rankingContentsType": null,
+            "rankingContentsName": null,
+            "rankingType": 0,
+            "rank": 39,
+            "characterId": "A1pIWbd0UKoTYJ2XbL_Cwwjsh4v6B66_qgzhihvAV2Q=",
+            "characterName": "축제",
+            "classId": 2,
+            "className": "검성",
+            "guildName": "달",
+            "point": 753616,
+            "prevRank": 0,
+            "rankChange": 0,
+            "gradeId": 9,
+            "gradeName": "1성장교",
+            "gradeIcon": "https://assets.playnccdn.com/static-aion2-gamedata/resources/UT_Ranking_Grade_Abyss_Officer_01.png",
+            "profileImage": "https://profileimg.plaync.com/game_profile_images/aion2/images?gameServerKey=1001&charKey=281756451687374092",
+            "extraDataMap": {
+                "deathCount": 425,
+                "assistCount": 2350,
+                "killCount": 2953
+            }
+        },
+        {
+            "rankingContentsType": null,
+            "rankingContentsName": null,
+            "rankingType": 0,
+            "rank": 40,
+            "characterId": "A1pIWbd0UKoTYJ2XbL_Cw4djn0sSylyA_EsfRaL0uko=",
+            "characterName": "꼬마펭귄핑구",
+            "classId": 7,
+            "className": "마도성",
+            "guildName": "Tooniverse",
+            "point": 750144,
+            "prevRank": 0,
+            "rankChange": 0,
+            "gradeId": 9,
+            "gradeName": "1성장교",
+            "gradeIcon": "https://assets.playnccdn.com/static-aion2-gamedata/resources/UT_Ranking_Grade_Abyss_Officer_01.png",
+            "profileImage": "https://profileimg.plaync.com/game_profile_images/aion2/images?gameServerKey=1001&charKey=281756451687378365",
+            "extraDataMap": {
+                "deathCount": 195,
+                "assistCount": 1989,
+                "killCount": 1478
+            }
+        },
+        {
+            "rankingContentsType": null,
+            "rankingContentsName": null,
+            "rankingType": 0,
+            "rank": 41,
+            "characterId": "A1pIWbd0UKoTYJ2XbL_CwycsefDZ6BIKLmrLhtZ5T48=",
+            "characterName": "판금",
+            "classId": 2,
+            "className": "검성",
+            "guildName": "PK",
+            "point": 744065,
+            "prevRank": 0,
+            "rankChange": 0,
+            "gradeId": 9,
+            "gradeName": "1성장교",
+            "gradeIcon": "https://assets.playnccdn.com/static-aion2-gamedata/resources/UT_Ranking_Grade_Abyss_Officer_01.png",
+            "profileImage": "https://profileimg.plaync.com/game_profile_images/aion2/images?gameServerKey=1001&charKey=281756451687389109",
+            "extraDataMap": {
+                "deathCount": 115,
+                "assistCount": 2393,
+                "killCount": 1841
+            }
+        },
+        {
+            "rankingContentsType": null,
+            "rankingContentsName": null,
+            "rankingType": 0,
+            "rank": 42,
+            "characterId": "A1pIWbd0UKoTYJ2XbL_Cw732nTBjj8gqGyIRJIcPJJo=",
+            "characterName": "성",
+            "classId": 2,
+            "className": "검성",
+            "guildName": "신",
+            "point": 740119,
+            "prevRank": 0,
+            "rankChange": 0,
+            "gradeId": 9,
+            "gradeName": "1성장교",
+            "gradeIcon": "https://assets.playnccdn.com/static-aion2-gamedata/resources/UT_Ranking_Grade_Abyss_Officer_01.png",
+            "profileImage": "https://profileimg.plaync.com/game_profile_images/aion2/images?gameServerKey=1001&charKey=281756451687373248",
+            "extraDataMap": {
+                "deathCount": 570,
+                "assistCount": 1729,
+                "killCount": 2261
+            }
+        },
+        {
+            "rankingContentsType": null,
+            "rankingContentsName": null,
+            "rankingType": 0,
+            "rank": 43,
+            "characterId": "A1pIWbd0UKoTYJ2XbL_Cw-waKhTM_8QZ77c1S4cyRus=",
+            "characterName": "사기캐",
+            "classId": 3,
+            "className": "수호성",
+            "guildName": "PK",
+            "point": 716358,
+            "prevRank": 0,
+            "rankChange": 0,
+            "gradeId": 10,
+            "gradeName": "1급병",
+            "gradeIcon": "https://assets.playnccdn.com/static-aion2-gamedata/resources/UT_Ranking_Grade_Abyss_Solidier_01.png",
+            "profileImage": "https://profileimg.plaync.com/game_profile_images/aion2/images?gameServerKey=1001&charKey=281756451687424038",
+            "extraDataMap": {
+                "deathCount": 173,
+                "assistCount": 2554,
+                "killCount": 1520
+            }
+        },
+        {
+            "rankingContentsType": null,
+            "rankingContentsName": null,
+            "rankingType": 0,
+            "rank": 44,
+            "characterId": "A1pIWbd0UKoTYJ2XbL_Cw8XlSBhfbN_PbBehlEj2UbQ=",
+            "characterName": "병호",
+            "classId": 8,
+            "className": "치유성",
+            "guildName": "달",
+            "point": 691175,
+            "prevRank": 0,
+            "rankChange": 0,
+            "gradeId": 10,
+            "gradeName": "1급병",
+            "gradeIcon": "https://assets.playnccdn.com/static-aion2-gamedata/resources/UT_Ranking_Grade_Abyss_Solidier_01.png",
+            "profileImage": "https://profileimg.plaync.com/game_profile_images/aion2/images?gameServerKey=1001&charKey=281756451687370454",
+            "extraDataMap": {
+                "deathCount": 197,
+                "assistCount": 3114,
+                "killCount": 1834
+            }
+        },
+        {
+            "rankingContentsType": null,
+            "rankingContentsName": null,
+            "rankingType": 0,
+            "rank": 45,
+            "characterId": "A1pIWbd0UKoTYJ2XbL_CwyJri-Xy9Q7eQr0yVOpUS_c=",
+            "characterName": "신사",
+            "classId": 8,
+            "className": "치유성",
+            "guildName": null,
+            "point": 684627,
+            "prevRank": 0,
+            "rankChange": 0,
+            "gradeId": 10,
+            "gradeName": "1급병",
+            "gradeIcon": "https://assets.playnccdn.com/static-aion2-gamedata/resources/UT_Ranking_Grade_Abyss_Solidier_01.png",
+            "profileImage": "https://profileimg.plaync.com/game_profile_images/aion2/images?gameServerKey=1001&charKey=281756451687391616",
+            "extraDataMap": {
+                "deathCount": 320,
+                "assistCount": 2220,
+                "killCount": 1010
+            }
+        },
+        {
+            "rankingContentsType": null,
+            "rankingContentsName": null,
+            "rankingType": 0,
+            "rank": 46,
+            "characterId": "A1pIWbd0UKoTYJ2XbL_Cw1idGn_AAEwNsU-kNW2hGD8=",
+            "characterName": "뭉",
+            "classId": 2,
+            "className": "검성",
+            "guildName": "아사단",
+            "point": 684399,
+            "prevRank": 0,
+            "rankChange": 0,
+            "gradeId": 10,
+            "gradeName": "1급병",
+            "gradeIcon": "https://assets.playnccdn.com/static-aion2-gamedata/resources/UT_Ranking_Grade_Abyss_Solidier_01.png",
+            "profileImage": "https://profileimg.plaync.com/game_profile_images/aion2/images?gameServerKey=1001&charKey=281756451687375577",
+            "extraDataMap": {
+                "deathCount": 290,
+                "assistCount": 1607,
+                "killCount": 1007
+            }
+        },
+        {
+            "rankingContentsType": null,
+            "rankingContentsName": null,
+            "rankingType": 0,
+            "rank": 47,
+            "characterId": "A1pIWbd0UKoTYJ2XbL_CwwP3x_J1Ab0L_NBpjD6RVh4=",
+            "characterName": "점멸",
+            "classId": 5,
+            "className": "살성",
+            "guildName": null,
+            "point": 683604,
+            "prevRank": 0,
+            "rankChange": 0,
+            "gradeId": 10,
+            "gradeName": "1급병",
+            "gradeIcon": "https://assets.playnccdn.com/static-aion2-gamedata/resources/UT_Ranking_Grade_Abyss_Solidier_01.png",
+            "profileImage": "https://profileimg.plaync.com/game_profile_images/aion2/images?gameServerKey=1001&charKey=281756451687373155",
+            "extraDataMap": {
+                "deathCount": 249,
+                "assistCount": 2180,
+                "killCount": 1847
+            }
+        },
+        {
+            "rankingContentsType": null,
+            "rankingContentsName": null,
+            "rankingType": 0,
+            "rank": 48,
+            "characterId": "A1pIWbd0UKoTYJ2XbL_Cw3_q8mEZPjVwSxHvZ8ZLDaI=",
+            "characterName": "비닉",
+            "classId": 7,
+            "className": "마도성",
+            "guildName": null,
+            "point": 652237,
+            "prevRank": 0,
+            "rankChange": 0,
+            "gradeId": 10,
+            "gradeName": "1급병",
+            "gradeIcon": "https://assets.playnccdn.com/static-aion2-gamedata/resources/UT_Ranking_Grade_Abyss_Solidier_01.png",
+            "profileImage": "https://profileimg.plaync.com/game_profile_images/aion2/images?gameServerKey=1001&charKey=281756451687419213",
+            "extraDataMap": {
+                "deathCount": 346,
+                "assistCount": 697,
+                "killCount": 850
+            }
+        },
+        {
+            "rankingContentsType": null,
+            "rankingContentsName": null,
+            "rankingType": 0,
+            "rank": 49,
+            "characterId": "A1pIWbd0UKoTYJ2XbL_Cwwf9Kd7hCS4zTf4lKvm0ulc=",
+            "characterName": "라뎃",
+            "classId": 2,
+            "className": "검성",
+            "guildName": "Day",
+            "point": 649522,
+            "prevRank": 0,
+            "rankChange": 0,
+            "gradeId": 10,
+            "gradeName": "1급병",
+            "gradeIcon": "https://assets.playnccdn.com/static-aion2-gamedata/resources/UT_Ranking_Grade_Abyss_Solidier_01.png",
+            "profileImage": "https://profileimg.plaync.com/game_profile_images/aion2/images?gameServerKey=1001&charKey=281756451687369319",
+            "extraDataMap": {
+                "deathCount": 177,
+                "assistCount": 936,
+                "killCount": 1482
+            }
+        },
+        {
+            "rankingContentsType": null,
+            "rankingContentsName": null,
+            "rankingType": 0,
+            "rank": 50,
+            "characterId": "A1pIWbd0UKoTYJ2XbL_Cw9yAVQgoeictn_hzEUMe88Y=",
+            "characterName": "밤은",
+            "classId": 7,
+            "className": "마도성",
+            "guildName": "용",
+            "point": 648984,
+            "prevRank": 0,
+            "rankChange": 0,
+            "gradeId": 10,
+            "gradeName": "1급병",
+            "gradeIcon": "https://assets.playnccdn.com/static-aion2-gamedata/resources/UT_Ranking_Grade_Abyss_Solidier_01.png",
+            "profileImage": "https://profileimg.plaync.com/game_profile_images/aion2/images?gameServerKey=1001&charKey=281756451687373798",
+            "extraDataMap": {
+                "deathCount": 349,
+                "assistCount": 2504,
+                "killCount": 1514
+            }
+        },
+        {
+            "rankingContentsType": null,
+            "rankingContentsName": null,
+            "rankingType": 0,
+            "rank": 51,
+            "characterId": "A1pIWbd0UKoTYJ2XbL_CwzDKBlzUrKUfDjrQ_C60MlM=",
+            "characterName": "한립",
+            "classId": 8,
+            "className": "치유성",
+            "guildName": null,
+            "point": 638808,
+            "prevRank": 0,
+            "rankChange": 1,
+            "gradeId": 10,
+            "gradeName": "1급병",
+            "gradeIcon": "https://assets.playnccdn.com/static-aion2-gamedata/resources/UT_Ranking_Grade_Abyss_Solidier_01.png",
+            "profileImage": "https://profileimg.plaync.com/game_profile_images/aion2/images?gameServerKey=1001&charKey=281756451687388501",
+            "extraDataMap": {
+                "deathCount": 126,
+                "assistCount": 4663,
+                "killCount": 1188
+            }
+        },
+        {
+            "rankingContentsType": null,
+            "rankingContentsName": null,
+            "rankingType": 0,
+            "rank": 52,
+            "characterId": "A1pIWbd0UKoTYJ2XbL_Cw07M5gKTtaDrG0T9M0ZJ3dA=",
+            "characterName": "응이",
+            "classId": 9,
+            "className": "호법성",
+            "guildName": "달",
+            "point": 636131,
+            "prevRank": 0,
+            "rankChange": -1,
+            "gradeId": 10,
+            "gradeName": "1급병",
+            "gradeIcon": "https://assets.playnccdn.com/static-aion2-gamedata/resources/UT_Ranking_Grade_Abyss_Solidier_01.png",
+            "profileImage": "https://profileimg.plaync.com/game_profile_images/aion2/images?gameServerKey=1001&charKey=281756451687408552",
+            "extraDataMap": {
+                "deathCount": 218,
+                "assistCount": 2568,
+                "killCount": 1361
+            }
+        },
+        {
+            "rankingContentsType": null,
+            "rankingContentsName": null,
+            "rankingType": 0,
+            "rank": 53,
+            "characterId": "A1pIWbd0UKoTYJ2XbL_Cw_7K3CFFTudzjaJ1Sr0RbfY=",
+            "characterName": "린브",
+            "classId": 8,
+            "className": "치유성",
+            "guildName": "황제",
+            "point": 634978,
+            "prevRank": 0,
+            "rankChange": 0,
+            "gradeId": 10,
+            "gradeName": "1급병",
+            "gradeIcon": "https://assets.playnccdn.com/static-aion2-gamedata/resources/UT_Ranking_Grade_Abyss_Solidier_01.png",
+            "profileImage": "https://profileimg.plaync.com/game_profile_images/aion2/images?gameServerKey=1001&charKey=281756451687373942",
+            "extraDataMap": {
+                "deathCount": 105,
+                "assistCount": 1252,
+                "killCount": 335
+            }
+        },
+        {
+            "rankingContentsType": null,
+            "rankingContentsName": null,
+            "rankingType": 0,
+            "rank": 54,
+            "characterId": "A1pIWbd0UKoTYJ2XbL_Cw_md_A445GKvEuP7-qRkMko=",
+            "characterName": "이구용",
+            "classId": 2,
+            "className": "검성",
+            "guildName": null,
+            "point": 628523,
+            "prevRank": 0,
+            "rankChange": 5,
+            "gradeId": 10,
+            "gradeName": "1급병",
+            "gradeIcon": "https://assets.playnccdn.com/static-aion2-gamedata/resources/UT_Ranking_Grade_Abyss_Solidier_01.png",
+            "profileImage": "https://profileimg.plaync.com/game_profile_images/aion2/images?gameServerKey=1001&charKey=281756451687369910",
+            "extraDataMap": {
+                "deathCount": 274,
+                "assistCount": 241,
+                "killCount": 1132
+            }
+        },
+        {
+            "rankingContentsType": null,
+            "rankingContentsName": null,
+            "rankingType": 0,
+            "rank": 55,
+            "characterId": "A1pIWbd0UKoTYJ2XbL_Cwz3R8qG9N_ZoLCaWR7hVqr4=",
+            "characterName": "애쉬",
+            "classId": 4,
+            "className": "궁성",
+            "guildName": null,
+            "point": 625347,
+            "prevRank": 0,
+            "rankChange": -1,
+            "gradeId": 10,
+            "gradeName": "1급병",
+            "gradeIcon": "https://assets.playnccdn.com/static-aion2-gamedata/resources/UT_Ranking_Grade_Abyss_Solidier_01.png",
+            "profileImage": "https://profileimg.plaync.com/game_profile_images/aion2/images?gameServerKey=1001&charKey=281756451687375039",
+            "extraDataMap": {
+                "deathCount": 443,
+                "assistCount": 2808,
+                "killCount": 1022
+            }
+        },
+        {
+            "rankingContentsType": null,
+            "rankingContentsName": null,
+            "rankingType": 0,
+            "rank": 56,
+            "characterId": "A1pIWbd0UKoTYJ2XbL_Cw8R25rAlS-TUCmtjofhP3a0=",
+            "characterName": "자택경비원",
+            "classId": 4,
+            "className": "궁성",
+            "guildName": null,
+            "point": 617158,
+            "prevRank": 0,
+            "rankChange": -1,
+            "gradeId": 10,
+            "gradeName": "1급병",
+            "gradeIcon": "https://assets.playnccdn.com/static-aion2-gamedata/resources/UT_Ranking_Grade_Abyss_Solidier_01.png",
+            "profileImage": "https://profileimg.plaync.com/game_profile_images/aion2/images?gameServerKey=1001&charKey=281756451687371489",
+            "extraDataMap": {
+                "deathCount": 433,
+                "assistCount": 4649,
+                "killCount": 2598
+            }
+        },
+        {
+            "rankingContentsType": null,
+            "rankingContentsName": null,
+            "rankingType": 0,
+            "rank": 57,
+            "characterId": "A1pIWbd0UKoTYJ2XbL_CwzjDleR8CQVEi4EJBJTP2mc=",
+            "characterName": "리드",
+            "classId": 7,
+            "className": "마도성",
+            "guildName": "도로롱",
+            "point": 610477,
+            "prevRank": 0,
+            "rankChange": -1,
+            "gradeId": 10,
+            "gradeName": "1급병",
+            "gradeIcon": "https://assets.playnccdn.com/static-aion2-gamedata/resources/UT_Ranking_Grade_Abyss_Solidier_01.png",
+            "profileImage": "https://profileimg.plaync.com/game_profile_images/aion2/images?gameServerKey=1001&charKey=281756451687378273",
+            "extraDataMap": {
+                "deathCount": 240,
+                "assistCount": 3475,
+                "killCount": 1810
+            }
+        },
+        {
+            "rankingContentsType": null,
+            "rankingContentsName": null,
+            "rankingType": 0,
+            "rank": 58,
+            "characterId": "A1pIWbd0UKoTYJ2XbL_Cw63qECp2LR1DLd9E_zvshLg=",
+            "characterName": "대천사",
+            "classId": 3,
+            "className": "수호성",
+            "guildName": null,
+            "point": 606209,
+            "prevRank": 0,
+            "rankChange": -1,
+            "gradeId": 10,
+            "gradeName": "1급병",
+            "gradeIcon": "https://assets.playnccdn.com/static-aion2-gamedata/resources/UT_Ranking_Grade_Abyss_Solidier_01.png",
+            "profileImage": "https://profileimg.plaync.com/game_profile_images/aion2/images?gameServerKey=1001&charKey=281756451687374094",
+            "extraDataMap": {
+                "deathCount": 275,
+                "assistCount": 2018,
+                "killCount": 1444
+            }
+        },
+        {
+            "rankingContentsType": null,
+            "rankingContentsName": null,
+            "rankingType": 0,
+            "rank": 59,
+            "characterId": "A1pIWbd0UKoTYJ2XbL_Cw1GzaSc6X2hZCOzRERvMWc8=",
+            "characterName": "뽀",
+            "classId": 8,
+            "className": "치유성",
+            "guildName": "Tooniverse",
+            "point": 604269,
+            "prevRank": 0,
+            "rankChange": -1,
+            "gradeId": 10,
+            "gradeName": "1급병",
+            "gradeIcon": "https://assets.playnccdn.com/static-aion2-gamedata/resources/UT_Ranking_Grade_Abyss_Solidier_01.png",
+            "profileImage": "https://profileimg.plaync.com/game_profile_images/aion2/images?gameServerKey=1001&charKey=281756451687375855",
+            "extraDataMap": {
+                "deathCount": 99,
+                "assistCount": 868,
+                "killCount": 289
+            }
+        },
+        {
+            "rankingContentsType": null,
+            "rankingContentsName": null,
+            "rankingType": 0,
+            "rank": 60,
+            "characterId": "A1pIWbd0UKoTYJ2XbL_Cw1kAOs45M66Cta7ObUpnPIk=",
+            "characterName": "난너무슬프다",
+            "classId": 8,
+            "className": "치유성",
+            "guildName": "잉",
+            "point": 588001,
+            "prevRank": 0,
+            "rankChange": 0,
+            "gradeId": 10,
+            "gradeName": "1급병",
+            "gradeIcon": "https://assets.playnccdn.com/static-aion2-gamedata/resources/UT_Ranking_Grade_Abyss_Solidier_01.png",
+            "profileImage": "https://profileimg.plaync.com/game_profile_images/aion2/images?gameServerKey=1001&charKey=281756451687373023",
+            "extraDataMap": {
+                "deathCount": 242,
+                "assistCount": 1964,
+                "killCount": 791
+            }
+        },
+        {
+            "rankingContentsType": null,
+            "rankingContentsName": null,
+            "rankingType": 0,
+            "rank": 61,
+            "characterId": "A1pIWbd0UKoTYJ2XbL_CwxY6mxtlNgY0NroDUo0T_5I=",
+            "characterName": "민딩",
+            "classId": 8,
+            "className": "치유성",
+            "guildName": "PK",
+            "point": 584181,
+            "prevRank": 0,
+            "rankChange": 0,
+            "gradeId": 10,
+            "gradeName": "1급병",
+            "gradeIcon": "https://assets.playnccdn.com/static-aion2-gamedata/resources/UT_Ranking_Grade_Abyss_Solidier_01.png",
+            "profileImage": "https://profileimg.plaync.com/game_profile_images/aion2/images?gameServerKey=1001&charKey=281756451687398217",
+            "extraDataMap": {
+                "deathCount": 142,
+                "assistCount": 1961,
+                "killCount": 584
+            }
+        },
+        {
+            "rankingContentsType": null,
+            "rankingContentsName": null,
+            "rankingType": 0,
+            "rank": 62,
+            "characterId": "A1pIWbd0UKoTYJ2XbL_CwzMHiGP-sYdXC4kDK64f1sk=",
+            "characterName": "환용",
+            "classId": 4,
+            "className": "궁성",
+            "guildName": null,
+            "point": 583230,
+            "prevRank": 0,
+            "rankChange": 0,
+            "gradeId": 10,
+            "gradeName": "1급병",
+            "gradeIcon": "https://assets.playnccdn.com/static-aion2-gamedata/resources/UT_Ranking_Grade_Abyss_Solidier_01.png",
+            "profileImage": "https://profileimg.plaync.com/game_profile_images/aion2/images?gameServerKey=1001&charKey=281756451687370121",
+            "extraDataMap": {
+                "deathCount": 240,
+                "assistCount": 3217,
+                "killCount": 1383
+            }
+        },
+        {
+            "rankingContentsType": null,
+            "rankingContentsName": null,
+            "rankingType": 0,
+            "rank": 63,
+            "characterId": "A1pIWbd0UKoTYJ2XbL_CwxlvykYhsFQBxyZhS0tzi1Y=",
+            "characterName": "영숙",
+            "classId": 3,
+            "className": "수호성",
+            "guildName": "팀",
+            "point": 581509,
+            "prevRank": 0,
+            "rankChange": 0,
+            "gradeId": 10,
+            "gradeName": "1급병",
+            "gradeIcon": "https://assets.playnccdn.com/static-aion2-gamedata/resources/UT_Ranking_Grade_Abyss_Solidier_01.png",
+            "profileImage": "https://profileimg.plaync.com/game_profile_images/aion2/images?gameServerKey=1001&charKey=281756451687396051",
+            "extraDataMap": {
+                "deathCount": 1022,
+                "assistCount": 1455,
+                "killCount": 2865
+            }
+        },
+        {
+            "rankingContentsType": null,
+            "rankingContentsName": null,
+            "rankingType": 0,
+            "rank": 64,
+            "characterId": "A1pIWbd0UKoTYJ2XbL_Cw4J8p46Y4se7zI5g9x9BoNE=",
+            "characterName": "태연",
+            "classId": 5,
+            "className": "살성",
+            "guildName": "짜져봐선봉은내가선다",
+            "point": 580858,
+            "prevRank": 0,
+            "rankChange": 0,
+            "gradeId": 10,
+            "gradeName": "1급병",
+            "gradeIcon": "https://assets.playnccdn.com/static-aion2-gamedata/resources/UT_Ranking_Grade_Abyss_Solidier_01.png",
+            "profileImage": "https://profileimg.plaync.com/game_profile_images/aion2/images?gameServerKey=1001&charKey=281756451687371849",
+            "extraDataMap": {
+                "deathCount": 261,
+                "assistCount": 532,
+                "killCount": 1054
+            }
+        },
+        {
+            "rankingContentsType": null,
+            "rankingContentsName": null,
+            "rankingType": 0,
+            "rank": 65,
+            "characterId": "A1pIWbd0UKoTYJ2XbL_Cw32LgFIHQL1HM6Ed_OfzErs=",
+            "characterName": "꼬끼",
+            "classId": 4,
+            "className": "궁성",
+            "guildName": null,
+            "point": 578386,
+            "prevRank": 0,
+            "rankChange": 0,
+            "gradeId": 10,
+            "gradeName": "1급병",
+            "gradeIcon": "https://assets.playnccdn.com/static-aion2-gamedata/resources/UT_Ranking_Grade_Abyss_Solidier_01.png",
+            "profileImage": "https://profileimg.plaync.com/game_profile_images/aion2/images?gameServerKey=1001&charKey=281756451687382104",
+            "extraDataMap": {
+                "deathCount": 129,
+                "assistCount": 2275,
+                "killCount": 1098
+            }
+        },
+        {
+            "rankingContentsType": null,
+            "rankingContentsName": null,
+            "rankingType": 0,
+            "rank": 66,
+            "characterId": "A1pIWbd0UKoTYJ2XbL_Cw0PPCsSax1j1hki1ziCZ_CM=",
+            "characterName": "칼바람",
+            "classId": 9,
+            "className": "호법성",
+            "guildName": "천",
+            "point": 576949,
+            "prevRank": 0,
+            "rankChange": 0,
+            "gradeId": 10,
+            "gradeName": "1급병",
+            "gradeIcon": "https://assets.playnccdn.com/static-aion2-gamedata/resources/UT_Ranking_Grade_Abyss_Solidier_01.png",
+            "profileImage": "https://profileimg.plaync.com/game_profile_images/aion2/images?gameServerKey=1001&charKey=281756451687369575",
+            "extraDataMap": {
+                "deathCount": 227,
+                "assistCount": 1378,
+                "killCount": 969
+            }
+        },
+        {
+            "rankingContentsType": null,
+            "rankingContentsName": null,
+            "rankingType": 0,
+            "rank": 67,
+            "characterId": "A1pIWbd0UKoTYJ2XbL_Cw3GlI0PqWN81O3mliGaR0ik=",
+            "characterName": "몰입",
+            "classId": 2,
+            "className": "검성",
+            "guildName": "천",
+            "point": 574607,
+            "prevRank": 0,
+            "rankChange": 0,
+            "gradeId": 10,
+            "gradeName": "1급병",
+            "gradeIcon": "https://assets.playnccdn.com/static-aion2-gamedata/resources/UT_Ranking_Grade_Abyss_Solidier_01.png",
+            "profileImage": "https://profileimg.plaync.com/game_profile_images/aion2/images?gameServerKey=1001&charKey=281756451687390166",
+            "extraDataMap": {
+                "deathCount": 363,
+                "assistCount": 994,
+                "killCount": 682
+            }
+        },
+        {
+            "rankingContentsType": null,
+            "rankingContentsName": null,
+            "rankingType": 0,
+            "rank": 68,
+            "characterId": "A1pIWbd0UKoTYJ2XbL_Cw58P7fMg54R6e3Lkgm64R9Y=",
+            "characterName": "방울토마도성",
+            "classId": 7,
+            "className": "마도성",
+            "guildName": "아사단",
+            "point": 568975,
+            "prevRank": 0,
+            "rankChange": 0,
+            "gradeId": 10,
+            "gradeName": "1급병",
+            "gradeIcon": "https://assets.playnccdn.com/static-aion2-gamedata/resources/UT_Ranking_Grade_Abyss_Solidier_01.png",
+            "profileImage": "https://profileimg.plaync.com/game_profile_images/aion2/images?gameServerKey=1001&charKey=281756451687379424",
+            "extraDataMap": {
+                "deathCount": 235,
+                "assistCount": 2940,
+                "killCount": 1435
+            }
+        },
+        {
+            "rankingContentsType": null,
+            "rankingContentsName": null,
+            "rankingType": 0,
+            "rank": 69,
+            "characterId": "A1pIWbd0UKoTYJ2XbL_Cw4PqHBqz8_VoH1FWu45u_qE=",
+            "characterName": "꾸기",
+            "classId": 2,
+            "className": "검성",
+            "guildName": null,
+            "point": 566252,
+            "prevRank": 0,
+            "rankChange": 0,
+            "gradeId": 10,
+            "gradeName": "1급병",
+            "gradeIcon": "https://assets.playnccdn.com/static-aion2-gamedata/resources/UT_Ranking_Grade_Abyss_Solidier_01.png",
+            "profileImage": "https://profileimg.plaync.com/game_profile_images/aion2/images?gameServerKey=1001&charKey=281756451687391939",
+            "extraDataMap": {
+                "deathCount": 250,
+                "assistCount": 761,
+                "killCount": 1008
+            }
+        },
+        {
+            "rankingContentsType": null,
+            "rankingContentsName": null,
+            "rankingType": 0,
+            "rank": 70,
+            "characterId": "A1pIWbd0UKoTYJ2XbL_Cw2raH8VxK82zKiDcNLoAFI0=",
+            "characterName": "단단해요",
+            "classId": 3,
+            "className": "수호성",
+            "guildName": "괴물",
+            "point": 562899,
+            "prevRank": 0,
+            "rankChange": 1,
+            "gradeId": 10,
+            "gradeName": "1급병",
+            "gradeIcon": "https://assets.playnccdn.com/static-aion2-gamedata/resources/UT_Ranking_Grade_Abyss_Solidier_01.png",
+            "profileImage": "https://profileimg.plaync.com/game_profile_images/aion2/images?gameServerKey=1001&charKey=281756451687387787",
+            "extraDataMap": {
+                "deathCount": 547,
+                "assistCount": 665,
+                "killCount": 1303
+            }
+        },
+        {
+            "rankingContentsType": null,
+            "rankingContentsName": null,
+            "rankingType": 0,
+            "rank": 71,
+            "characterId": "A1pIWbd0UKoTYJ2XbL_Cwzigm0K9IlIv2aTg94P0iF0=",
+            "characterName": "싸",
+            "classId": 2,
+            "className": "검성",
+            "guildName": "용",
+            "point": 558281,
+            "prevRank": 0,
+            "rankChange": -1,
+            "gradeId": 10,
+            "gradeName": "1급병",
+            "gradeIcon": "https://assets.playnccdn.com/static-aion2-gamedata/resources/UT_Ranking_Grade_Abyss_Solidier_01.png",
+            "profileImage": "https://profileimg.plaync.com/game_profile_images/aion2/images?gameServerKey=1001&charKey=281756451687428990",
+            "extraDataMap": {
+                "deathCount": 305,
+                "assistCount": 951,
+                "killCount": 836
+            }
+        },
+        {
+            "rankingContentsType": null,
+            "rankingContentsName": null,
+            "rankingType": 0,
+            "rank": 72,
+            "characterId": "A1pIWbd0UKoTYJ2XbL_Cw3CxHsmlMsnUjVbEKaF2wcQ=",
+            "characterName": "케챂",
+            "classId": 5,
+            "className": "살성",
+            "guildName": "천",
+            "point": 555634,
+            "prevRank": 0,
+            "rankChange": 0,
+            "gradeId": 10,
+            "gradeName": "1급병",
+            "gradeIcon": "https://assets.playnccdn.com/static-aion2-gamedata/resources/UT_Ranking_Grade_Abyss_Solidier_01.png",
+            "profileImage": "https://profileimg.plaync.com/game_profile_images/aion2/images?gameServerKey=1001&charKey=281756451687372053",
+            "extraDataMap": {
+                "deathCount": 365,
+                "assistCount": 797,
+                "killCount": 1193
+            }
+        },
+        {
+            "rankingContentsType": null,
+            "rankingContentsName": null,
+            "rankingType": 0,
+            "rank": 73,
+            "characterId": "A1pIWbd0UKoTYJ2XbL_Cw6IkP5WYc8Geg3NNH4JtGRY=",
+            "characterName": "머씨",
+            "classId": 8,
+            "className": "치유성",
+            "guildName": null,
+            "point": 554434,
+            "prevRank": 0,
+            "rankChange": 0,
+            "gradeId": 10,
+            "gradeName": "1급병",
+            "gradeIcon": "https://assets.playnccdn.com/static-aion2-gamedata/resources/UT_Ranking_Grade_Abyss_Solidier_01.png",
+            "profileImage": "https://profileimg.plaync.com/game_profile_images/aion2/images?gameServerKey=1001&charKey=281756451687371104",
+            "extraDataMap": {
+                "deathCount": 152,
+                "assistCount": 1050,
+                "killCount": 217
+            }
+        },
+        {
+            "rankingContentsType": null,
+            "rankingContentsName": null,
+            "rankingType": 0,
+            "rank": 74,
+            "characterId": "A1pIWbd0UKoTYJ2XbL_Cw79KpxUGbt4ErjpcHN7trfQ=",
+            "characterName": "다방",
+            "classId": 3,
+            "className": "수호성",
+            "guildName": "숲",
+            "point": 554356,
+            "prevRank": 0,
+            "rankChange": 0,
+            "gradeId": 10,
+            "gradeName": "1급병",
+            "gradeIcon": "https://assets.playnccdn.com/static-aion2-gamedata/resources/UT_Ranking_Grade_Abyss_Solidier_01.png",
+            "profileImage": "https://profileimg.plaync.com/game_profile_images/aion2/images?gameServerKey=1001&charKey=281756451687367632",
+            "extraDataMap": {
+                "deathCount": 358,
+                "assistCount": 2275,
+                "killCount": 951
+            }
+        },
+        {
+            "rankingContentsType": null,
+            "rankingContentsName": null,
+            "rankingType": 0,
+            "rank": 75,
+            "characterId": "A1pIWbd0UKoTYJ2XbL_Cw_5SyyvD4gd7Js2uVhkBYsA=",
+            "characterName": "배리",
+            "classId": 5,
+            "className": "살성",
+            "guildName": "세계",
+            "point": 554197,
+            "prevRank": 0,
+            "rankChange": 0,
+            "gradeId": 10,
+            "gradeName": "1급병",
+            "gradeIcon": "https://assets.playnccdn.com/static-aion2-gamedata/resources/UT_Ranking_Grade_Abyss_Solidier_01.png",
+            "profileImage": "https://profileimg.plaync.com/game_profile_images/aion2/images?gameServerKey=1001&charKey=281756451687398866",
+            "extraDataMap": {
+                "deathCount": 428,
+                "assistCount": 508,
+                "killCount": 1522
+            }
+        },
+        {
+            "rankingContentsType": null,
+            "rankingContentsName": null,
+            "rankingType": 0,
+            "rank": 76,
+            "characterId": "A1pIWbd0UKoTYJ2XbL_Cwz6vKTKLCKoqdonORP0sbW4=",
+            "characterName": "악령",
+            "classId": 4,
+            "className": "궁성",
+            "guildName": "쩐닭",
+            "point": 553650,
+            "prevRank": 0,
+            "rankChange": 0,
+            "gradeId": 10,
+            "gradeName": "1급병",
+            "gradeIcon": "https://assets.playnccdn.com/static-aion2-gamedata/resources/UT_Ranking_Grade_Abyss_Solidier_01.png",
+            "profileImage": "https://profileimg.plaync.com/game_profile_images/aion2/images?gameServerKey=1001&charKey=281756451687399197",
+            "extraDataMap": {
+                "deathCount": 348,
+                "assistCount": 1150,
+                "killCount": 1386
+            }
+        },
+        {
+            "rankingContentsType": null,
+            "rankingContentsName": null,
+            "rankingType": 0,
+            "rank": 77,
+            "characterId": "A1pIWbd0UKoTYJ2XbL_CwzyuL3mJoO0GFinfq1UsP3o=",
+            "characterName": "열기",
+            "classId": 2,
+            "className": "검성",
+            "guildName": "달",
+            "point": 552173,
+            "prevRank": 0,
+            "rankChange": 0,
+            "gradeId": 10,
+            "gradeName": "1급병",
+            "gradeIcon": "https://assets.playnccdn.com/static-aion2-gamedata/resources/UT_Ranking_Grade_Abyss_Solidier_01.png",
+            "profileImage": "https://profileimg.plaync.com/game_profile_images/aion2/images?gameServerKey=1001&charKey=281756451687373255",
+            "extraDataMap": {
+                "deathCount": 219,
+                "assistCount": 2625,
+                "killCount": 1152
+            }
+        },
+        {
+            "rankingContentsType": null,
+            "rankingContentsName": null,
+            "rankingType": 0,
+            "rank": 78,
+            "characterId": "A1pIWbd0UKoTYJ2XbL_Cw1LVlR5WMkmK2RCf3u0xEd4=",
+            "characterName": "미립",
+            "classId": 4,
+            "className": "궁성",
+            "guildName": null,
+            "point": 544455,
+            "prevRank": 0,
+            "rankChange": 0,
+            "gradeId": 11,
+            "gradeName": "2급병",
+            "gradeIcon": "https://assets.playnccdn.com/static-aion2-gamedata/resources/UT_Ranking_Grade_Abyss_Solidier_02.png",
+            "profileImage": "https://profileimg.plaync.com/game_profile_images/aion2/images?gameServerKey=1001&charKey=281756451687383891",
+            "extraDataMap": {
+                "deathCount": 307,
+                "assistCount": 1913,
+                "killCount": 1312
+            }
+        },
+        {
+            "rankingContentsType": null,
+            "rankingContentsName": null,
+            "rankingType": 0,
+            "rank": 79,
+            "characterId": "A1pIWbd0UKoTYJ2XbL_Cw9EmvXJ5vZb-L33DFN8EVy0=",
+            "characterName": "허생",
+            "classId": 3,
+            "className": "수호성",
+            "guildName": "품격",
+            "point": 543000,
+            "prevRank": 0,
+            "rankChange": 0,
+            "gradeId": 11,
+            "gradeName": "2급병",
+            "gradeIcon": "https://assets.playnccdn.com/static-aion2-gamedata/resources/UT_Ranking_Grade_Abyss_Solidier_02.png",
+            "profileImage": "https://profileimg.plaync.com/game_profile_images/aion2/images?gameServerKey=1001&charKey=281756451687418548",
+            "extraDataMap": {
+                "deathCount": 342,
+                "assistCount": 589,
+                "killCount": 953
+            }
+        },
+        {
+            "rankingContentsType": null,
+            "rankingContentsName": null,
+            "rankingType": 0,
+            "rank": 80,
+            "characterId": "A1pIWbd0UKoTYJ2XbL_CwwWSlta6pgOqUFhon0aB6PM=",
+            "characterName": "이야",
+            "classId": 9,
+            "className": "호법성",
+            "guildName": "황제",
+            "point": 537432,
+            "prevRank": 0,
+            "rankChange": 0,
+            "gradeId": 11,
+            "gradeName": "2급병",
+            "gradeIcon": "https://assets.playnccdn.com/static-aion2-gamedata/resources/UT_Ranking_Grade_Abyss_Solidier_02.png",
+            "profileImage": "https://profileimg.plaync.com/game_profile_images/aion2/images?gameServerKey=1001&charKey=281756451687371368",
+            "extraDataMap": {
+                "deathCount": 393,
+                "assistCount": 1380,
+                "killCount": 940
+            }
+        },
+        {
+            "rankingContentsType": null,
+            "rankingContentsName": null,
+            "rankingType": 0,
+            "rank": 81,
+            "characterId": "A1pIWbd0UKoTYJ2XbL_Cw8P2paCGuL6EtLx38RtpZ3U=",
+            "characterName": "운빨러",
+            "classId": 4,
+            "className": "궁성",
+            "guildName": null,
+            "point": 537360,
+            "prevRank": 0,
+            "rankChange": 0,
+            "gradeId": 11,
+            "gradeName": "2급병",
+            "gradeIcon": "https://assets.playnccdn.com/static-aion2-gamedata/resources/UT_Ranking_Grade_Abyss_Solidier_02.png",
+            "profileImage": "https://profileimg.plaync.com/game_profile_images/aion2/images?gameServerKey=1001&charKey=281756451687412793",
+            "extraDataMap": {
+                "deathCount": 143,
+                "assistCount": 772,
+                "killCount": 528
+            }
+        },
+        {
+            "rankingContentsType": null,
+            "rankingContentsName": null,
+            "rankingType": 0,
+            "rank": 82,
+            "characterId": "A1pIWbd0UKoTYJ2XbL_Cw0ty_5gc5O6TyU74NY8X6Vg=",
+            "characterName": "국장",
+            "classId": 8,
+            "className": "치유성",
+            "guildName": "천",
+            "point": 535497,
+            "prevRank": 0,
+            "rankChange": 0,
+            "gradeId": 11,
+            "gradeName": "2급병",
+            "gradeIcon": "https://assets.playnccdn.com/static-aion2-gamedata/resources/UT_Ranking_Grade_Abyss_Solidier_02.png",
+            "profileImage": "https://profileimg.plaync.com/game_profile_images/aion2/images?gameServerKey=1001&charKey=281756451687368500",
+            "extraDataMap": {
+                "deathCount": 199,
+                "assistCount": 1471,
+                "killCount": 537
+            }
+        },
+        {
+            "rankingContentsType": null,
+            "rankingContentsName": null,
+            "rankingType": 0,
+            "rank": 83,
+            "characterId": "A1pIWbd0UKoTYJ2XbL_Cw8FyWwkWYc8obsjL511djPg=",
+            "characterName": "아희",
+            "classId": 3,
+            "className": "수호성",
+            "guildName": null,
+            "point": 522506,
+            "prevRank": 0,
+            "rankChange": 0,
+            "gradeId": 11,
+            "gradeName": "2급병",
+            "gradeIcon": "https://assets.playnccdn.com/static-aion2-gamedata/resources/UT_Ranking_Grade_Abyss_Solidier_02.png",
+            "profileImage": "https://profileimg.plaync.com/game_profile_images/aion2/images?gameServerKey=1001&charKey=281756451687391134",
+            "extraDataMap": {
+                "deathCount": 297,
+                "assistCount": 1161,
+                "killCount": 1557
+            }
+        },
+        {
+            "rankingContentsType": null,
+            "rankingContentsName": null,
+            "rankingType": 0,
+            "rank": 84,
+            "characterId": "A1pIWbd0UKoTYJ2XbL_Cw0dM03E3V1HOtSMivanOZU0=",
+            "characterName": "지지",
+            "classId": 2,
+            "className": "검성",
+            "guildName": "놀이터",
+            "point": 513433,
+            "prevRank": 0,
+            "rankChange": 0,
+            "gradeId": 11,
+            "gradeName": "2급병",
+            "gradeIcon": "https://assets.playnccdn.com/static-aion2-gamedata/resources/UT_Ranking_Grade_Abyss_Solidier_02.png",
+            "profileImage": "https://profileimg.plaync.com/game_profile_images/aion2/images?gameServerKey=1001&charKey=281756451687375188",
+            "extraDataMap": {
+                "deathCount": 522,
+                "assistCount": 689,
+                "killCount": 1273
+            }
+        },
+        {
+            "rankingContentsType": null,
+            "rankingContentsName": null,
+            "rankingType": 0,
+            "rank": 85,
+            "characterId": "A1pIWbd0UKoTYJ2XbL_Cw1KL6MocNxmD5B30V4roMaE=",
+            "characterName": "살성",
+            "classId": 5,
+            "className": "살성",
+            "guildName": "별빛",
+            "point": 512161,
+            "prevRank": 0,
+            "rankChange": 0,
+            "gradeId": 11,
+            "gradeName": "2급병",
+            "gradeIcon": "https://assets.playnccdn.com/static-aion2-gamedata/resources/UT_Ranking_Grade_Abyss_Solidier_02.png",
+            "profileImage": "https://profileimg.plaync.com/game_profile_images/aion2/images?gameServerKey=1001&charKey=281756451687374646",
+            "extraDataMap": {
+                "deathCount": 373,
+                "assistCount": 512,
+                "killCount": 863
+            }
+        },
+        {
+            "rankingContentsType": null,
+            "rankingContentsName": null,
+            "rankingType": 0,
+            "rank": 86,
+            "characterId": "A1pIWbd0UKoTYJ2XbL_CwyupNP7WLEeTYy051cc4ANY=",
+            "characterName": "세랍",
+            "classId": 5,
+            "className": "살성",
+            "guildName": null,
+            "point": 510297,
+            "prevRank": 0,
+            "rankChange": 0,
+            "gradeId": 11,
+            "gradeName": "2급병",
+            "gradeIcon": "https://assets.playnccdn.com/static-aion2-gamedata/resources/UT_Ranking_Grade_Abyss_Solidier_02.png",
+            "profileImage": "https://profileimg.plaync.com/game_profile_images/aion2/images?gameServerKey=1001&charKey=281756451687404060",
+            "extraDataMap": {
+                "deathCount": 276,
+                "assistCount": 810,
+                "killCount": 1307
+            }
+        },
+        {
+            "rankingContentsType": null,
+            "rankingContentsName": null,
+            "rankingType": 0,
+            "rank": 87,
+            "characterId": "A1pIWbd0UKoTYJ2XbL_Cw1o05w5QHXraAKpLl3tC0M4=",
+            "characterName": "맵",
+            "classId": 7,
+            "className": "마도성",
+            "guildName": null,
+            "point": 507749,
+            "prevRank": 0,
+            "rankChange": 0,
+            "gradeId": 11,
+            "gradeName": "2급병",
+            "gradeIcon": "https://assets.playnccdn.com/static-aion2-gamedata/resources/UT_Ranking_Grade_Abyss_Solidier_02.png",
+            "profileImage": "https://profileimg.plaync.com/game_profile_images/aion2/images?gameServerKey=1001&charKey=281756451687393558",
+            "extraDataMap": {
+                "deathCount": 547,
+                "assistCount": 4628,
+                "killCount": 2422
+            }
+        },
+        {
+            "rankingContentsType": null,
+            "rankingContentsName": null,
+            "rankingType": 0,
+            "rank": 88,
+            "characterId": "A1pIWbd0UKoTYJ2XbL_CwxInTqPf53efFETnk-RZkVI=",
+            "characterName": "얼이",
+            "classId": 5,
+            "className": "살성",
+            "guildName": "용",
+            "point": 504846,
+            "prevRank": 0,
+            "rankChange": 0,
+            "gradeId": 11,
+            "gradeName": "2급병",
+            "gradeIcon": "https://assets.playnccdn.com/static-aion2-gamedata/resources/UT_Ranking_Grade_Abyss_Solidier_02.png",
+            "profileImage": "https://profileimg.plaync.com/game_profile_images/aion2/images?gameServerKey=1001&charKey=281756451687367337",
+            "extraDataMap": {
+                "deathCount": 251,
+                "assistCount": 604,
+                "killCount": 1704
+            }
+        },
+        {
+            "rankingContentsType": null,
+            "rankingContentsName": null,
+            "rankingType": 0,
+            "rank": 89,
+            "characterId": "A1pIWbd0UKoTYJ2XbL_Cwzzp0g9td1Zx-mrm9PFNcRc=",
+            "characterName": "달솔",
+            "classId": 4,
+            "className": "궁성",
+            "guildName": null,
+            "point": 502190,
+            "prevRank": 0,
+            "rankChange": 0,
+            "gradeId": 11,
+            "gradeName": "2급병",
+            "gradeIcon": "https://assets.playnccdn.com/static-aion2-gamedata/resources/UT_Ranking_Grade_Abyss_Solidier_02.png",
+            "profileImage": "https://profileimg.plaync.com/game_profile_images/aion2/images?gameServerKey=1001&charKey=281756451687404256",
+            "extraDataMap": {
+                "deathCount": 323,
+                "assistCount": 2937,
+                "killCount": 1084
+            }
+        },
+        {
+            "rankingContentsType": null,
+            "rankingContentsName": null,
+            "rankingType": 0,
+            "rank": 90,
+            "characterId": "A1pIWbd0UKoTYJ2XbL_Cwx_vVwE4voVJgRpo0VnVXyc=",
+            "characterName": "현궁",
+            "classId": 4,
+            "className": "궁성",
+            "guildName": "가을",
+            "point": 498506,
+            "prevRank": 0,
+            "rankChange": 0,
+            "gradeId": 11,
+            "gradeName": "2급병",
+            "gradeIcon": "https://assets.playnccdn.com/static-aion2-gamedata/resources/UT_Ranking_Grade_Abyss_Solidier_02.png",
+            "profileImage": "https://profileimg.plaync.com/game_profile_images/aion2/images?gameServerKey=1001&charKey=281756451687374085",
+            "extraDataMap": {
+                "deathCount": 393,
+                "assistCount": 2534,
+                "killCount": 1367
+            }
+        },
+        {
+            "rankingContentsType": null,
+            "rankingContentsName": null,
+            "rankingType": 0,
+            "rank": 91,
+            "characterId": "A1pIWbd0UKoTYJ2XbL_CwyGZFS40tw0H2HnhbFJcSXc=",
+            "characterName": "초승달",
+            "classId": 7,
+            "className": "마도성",
+            "guildName": "SOOP",
+            "point": 497133,
+            "prevRank": 0,
+            "rankChange": 0,
+            "gradeId": 11,
+            "gradeName": "2급병",
+            "gradeIcon": "https://assets.playnccdn.com/static-aion2-gamedata/resources/UT_Ranking_Grade_Abyss_Solidier_02.png",
+            "profileImage": "https://profileimg.plaync.com/game_profile_images/aion2/images?gameServerKey=1001&charKey=281756451687372139",
+            "extraDataMap": {
+                "deathCount": 241,
+                "assistCount": 4337,
+                "killCount": 1290
+            }
+        },
+        {
+            "rankingContentsType": null,
+            "rankingContentsName": null,
+            "rankingType": 0,
+            "rank": 92,
+            "characterId": "A1pIWbd0UKoTYJ2XbL_Cw_pAFDuOXQTTQpgpXAm3_Mg=",
+            "characterName": "미로아빠",
+            "classId": 3,
+            "className": "수호성",
+            "guildName": null,
+            "point": 492570,
+            "prevRank": 0,
+            "rankChange": 0,
+            "gradeId": 11,
+            "gradeName": "2급병",
+            "gradeIcon": "https://assets.playnccdn.com/static-aion2-gamedata/resources/UT_Ranking_Grade_Abyss_Solidier_02.png",
+            "profileImage": "https://profileimg.plaync.com/game_profile_images/aion2/images?gameServerKey=1001&charKey=281756451687369196",
+            "extraDataMap": {
+                "deathCount": 358,
+                "assistCount": 549,
+                "killCount": 1062
+            }
+        },
+        {
+            "rankingContentsType": null,
+            "rankingContentsName": null,
+            "rankingType": 0,
+            "rank": 93,
+            "characterId": "A1pIWbd0UKoTYJ2XbL_Cw70MwD7MsfGGOTBUQjHwZhU=",
+            "characterName": "츠키에",
+            "classId": 2,
+            "className": "검성",
+            "guildName": null,
+            "point": 484828,
+            "prevRank": 0,
+            "rankChange": 0,
+            "gradeId": 11,
+            "gradeName": "2급병",
+            "gradeIcon": "https://assets.playnccdn.com/static-aion2-gamedata/resources/UT_Ranking_Grade_Abyss_Solidier_02.png",
+            "profileImage": "https://profileimg.plaync.com/game_profile_images/aion2/images?gameServerKey=1001&charKey=281756451687408820",
+            "extraDataMap": {
+                "deathCount": 333,
+                "assistCount": 1124,
+                "killCount": 901
+            }
+        },
+        {
+            "rankingContentsType": null,
+            "rankingContentsName": null,
+            "rankingType": 0,
+            "rank": 94,
+            "characterId": "A1pIWbd0UKoTYJ2XbL_Cw2m-MuhQJTBn75OFwwZe074=",
+            "characterName": "유턴",
+            "classId": 7,
+            "className": "마도성",
+            "guildName": "쟁",
+            "point": 481699,
+            "prevRank": 0,
+            "rankChange": 0,
+            "gradeId": 11,
+            "gradeName": "2급병",
+            "gradeIcon": "https://assets.playnccdn.com/static-aion2-gamedata/resources/UT_Ranking_Grade_Abyss_Solidier_02.png",
+            "profileImage": "https://profileimg.plaync.com/game_profile_images/aion2/images?gameServerKey=1001&charKey=281756451687372662",
+            "extraDataMap": {
+                "deathCount": 355,
+                "assistCount": 1677,
+                "killCount": 1319
+            }
+        },
+        {
+            "rankingContentsType": null,
+            "rankingContentsName": null,
+            "rankingType": 0,
+            "rank": 95,
+            "characterId": "A1pIWbd0UKoTYJ2XbL_Cw91xAhqrnTnqjDJu8EmF_8k=",
+            "characterName": "완승",
+            "classId": 5,
+            "className": "살성",
+            "guildName": null,
+            "point": 480986,
+            "prevRank": 0,
+            "rankChange": 0,
+            "gradeId": 11,
+            "gradeName": "2급병",
+            "gradeIcon": "https://assets.playnccdn.com/static-aion2-gamedata/resources/UT_Ranking_Grade_Abyss_Solidier_02.png",
+            "profileImage": "https://profileimg.plaync.com/game_profile_images/aion2/images?gameServerKey=1001&charKey=281756451687368722",
+            "extraDataMap": {
+                "deathCount": 330,
+                "assistCount": 878,
+                "killCount": 1201
+            }
+        },
+        {
+            "rankingContentsType": null,
+            "rankingContentsName": null,
+            "rankingType": 0,
+            "rank": 96,
+            "characterId": "A1pIWbd0UKoTYJ2XbL_Cw7vWKNYTM0W4-AS21p5Gejc=",
+            "characterName": "밀크",
+            "classId": 7,
+            "className": "마도성",
+            "guildName": null,
+            "point": 480913,
+            "prevRank": 0,
+            "rankChange": 0,
+            "gradeId": 11,
+            "gradeName": "2급병",
+            "gradeIcon": "https://assets.playnccdn.com/static-aion2-gamedata/resources/UT_Ranking_Grade_Abyss_Solidier_02.png",
+            "profileImage": "https://profileimg.plaync.com/game_profile_images/aion2/images?gameServerKey=1001&charKey=281756451687374353",
+            "extraDataMap": {
+                "deathCount": 295,
+                "assistCount": 2105,
+                "killCount": 1184
+            }
+        },
+        {
+            "rankingContentsType": null,
+            "rankingContentsName": null,
+            "rankingType": 0,
+            "rank": 97,
+            "characterId": "A1pIWbd0UKoTYJ2XbL_Cw35mrl9gUk4AUw2mL3lFabM=",
+            "characterName": "키키",
+            "classId": 4,
+            "className": "궁성",
+            "guildName": "세계",
+            "point": 478995,
+            "prevRank": 0,
+            "rankChange": 0,
+            "gradeId": 11,
+            "gradeName": "2급병",
+            "gradeIcon": "https://assets.playnccdn.com/static-aion2-gamedata/resources/UT_Ranking_Grade_Abyss_Solidier_02.png",
+            "profileImage": "https://profileimg.plaync.com/game_profile_images/aion2/images?gameServerKey=1001&charKey=281756451687391409",
+            "extraDataMap": {
+                "deathCount": 269,
+                "assistCount": 709,
+                "killCount": 751
+            }
+        },
+        {
+            "rankingContentsType": null,
+            "rankingContentsName": null,
+            "rankingType": 0,
+            "rank": 98,
+            "characterId": "A1pIWbd0UKoTYJ2XbL_Cw84dW8Wwo_SBjoSE7HuXq-s=",
+            "characterName": "빠따",
+            "classId": 2,
+            "className": "검성",
+            "guildName": null,
+            "point": 478941,
+            "prevRank": 0,
+            "rankChange": 0,
+            "gradeId": 11,
+            "gradeName": "2급병",
+            "gradeIcon": "https://assets.playnccdn.com/static-aion2-gamedata/resources/UT_Ranking_Grade_Abyss_Solidier_02.png",
+            "profileImage": "https://profileimg.plaync.com/game_profile_images/aion2/images?gameServerKey=1001&charKey=281756451687375936",
+            "extraDataMap": {
+                "deathCount": 605,
+                "assistCount": 1088,
+                "killCount": 1154
+            }
+        },
+        {
+            "rankingContentsType": null,
+            "rankingContentsName": null,
+            "rankingType": 0,
+            "rank": 99,
+            "characterId": "A1pIWbd0UKoTYJ2XbL_Cw3k5gowgnSwmtdCbZWzKMew=",
+            "characterName": "OmO",
+            "classId": 3,
+            "className": "수호성",
+            "guildName": null,
+            "point": 478489,
+            "prevRank": 0,
+            "rankChange": 0,
+            "gradeId": 11,
+            "gradeName": "2급병",
+            "gradeIcon": "https://assets.playnccdn.com/static-aion2-gamedata/resources/UT_Ranking_Grade_Abyss_Solidier_02.png",
+            "profileImage": "https://profileimg.plaync.com/game_profile_images/aion2/images?gameServerKey=1001&charKey=281756451687406264",
+            "extraDataMap": {
+                "deathCount": 124,
+                "assistCount": 1109,
+                "killCount": 1695
+            }
+        },
+        {
+            "rankingContentsType": null,
+            "rankingContentsName": null,
+            "rankingType": 0,
+            "rank": 100,
+            "characterId": "A1pIWbd0UKoTYJ2XbL_Cw5Jz74r42t7Qr49Lh_tH9xY=",
+            "characterName": "도리",
+            "classId": 8,
+            "className": "치유성",
+            "guildName": "용",
+            "point": 476729,
+            "prevRank": 0,
+            "rankChange": 0,
+            "gradeId": 11,
+            "gradeName": "2급병",
+            "gradeIcon": "https://assets.playnccdn.com/static-aion2-gamedata/resources/UT_Ranking_Grade_Abyss_Solidier_02.png",
+            "profileImage": "https://profileimg.plaync.com/game_profile_images/aion2/images?gameServerKey=1001&charKey=281756451687372365",
+            "extraDataMap": {
+                "deathCount": 125,
+                "assistCount": 1002,
+                "killCount": 251
+            }
+        }
+    ],
+    "myRanking": null,
+    "friendRankingList": null
+}
+
+
+
+
+
+랭커 정보를 호출할 때 사용하는 파라미터는 다음과 같아
+
+https://aion2.plaync.com/api/gameinfo/servers?lang=ko
+{
+    "serverList": [
+        {
+            "raceId": 1,
+            "serverId": 1001,
+            "serverName": "시엘",
+            "serverShortName": "시엘"
+        },
+        {
+            "raceId": 1,
+            "serverId": 1002,
+            "serverName": "네자칸",
+            "serverShortName": "네자"
+        },
+        {
+            "raceId": 1,
+            "serverId": 1003,
+            "serverName": "바이젤",
+            "serverShortName": "바이"
+        },
+        {
+            "raceId": 1,
+            "serverId": 1004,
+            "serverName": "카이시넬",
+            "serverShortName": "카이"
+        },
+        {
+            "raceId": 1,
+            "serverId": 1005,
+            "serverName": "유스티엘",
+            "serverShortName": "유스"
+        },
+        {
+            "raceId": 1,
+            "serverId": 1006,
+            "serverName": "아리엘",
+            "serverShortName": "아리"
+        },
+        {
+            "raceId": 1,
+            "serverId": 1007,
+            "serverName": "프레기온",
+            "serverShortName": "프레"
+        },
+        {
+            "raceId": 1,
+            "serverId": 1008,
+            "serverName": "메스람타에다",
+            "serverShortName": "메스"
+        },
+        {
+            "raceId": 1,
+            "serverId": 1009,
+            "serverName": "히타니에",
+            "serverShortName": "히타"
+        },
+        {
+            "raceId": 1,
+            "serverId": 1010,
+            "serverName": "나니아",
+            "serverShortName": "나니"
+        },
+        {
+            "raceId": 1,
+            "serverId": 1011,
+            "serverName": "타하바타",
+            "serverShortName": "타하"
+        },
+        {
+            "raceId": 1,
+            "serverId": 1012,
+            "serverName": "루터스",
+            "serverShortName": "루터"
+        },
+        {
+            "raceId": 1,
+            "serverId": 1013,
+            "serverName": "페르노스",
+            "serverShortName": "페르"
+        },
+        {
+            "raceId": 1,
+            "serverId": 1014,
+            "serverName": "다미누",
+            "serverShortName": "다미"
+        },
+        {
+            "raceId": 1,
+            "serverId": 1015,
+            "serverName": "카사카",
+            "serverShortName": "카사"
+        },
+        {
+            "raceId": 1,
+            "serverId": 1016,
+            "serverName": "바카르마",
+            "serverShortName": "바카"
+        },
+        {
+            "raceId": 1,
+            "serverId": 1017,
+            "serverName": "챈가룽",
+            "serverShortName": "챈가"
+        },
+        {
+            "raceId": 1,
+            "serverId": 1018,
+            "serverName": "코치룽",
+            "serverShortName": "코치"
+        },
+        {
+            "raceId": 1,
+            "serverId": 1019,
+            "serverName": "이슈타르",
+            "serverShortName": "이슈"
+        },
+        {
+            "raceId": 1,
+            "serverId": 1020,
+            "serverName": "티아마트",
+            "serverShortName": "티아"
+        },
+        {
+            "raceId": 1,
+            "serverId": 1021,
+            "serverName": "포에타",
+            "serverShortName": "포에"
+        },
+        {
+            "raceId": 2,
+            "serverId": 2001,
+            "serverName": "이스라펠",
+            "serverShortName": "이스"
+        },
+        {
+            "raceId": 2,
+            "serverId": 2002,
+            "serverName": "지켈",
+            "serverShortName": "지켈"
+        },
+        {
+            "raceId": 2,
+            "serverId": 2003,
+            "serverName": "트리니엘",
+            "serverShortName": "트리"
+        },
+        {
+            "raceId": 2,
+            "serverId": 2004,
+            "serverName": "루미엘",
+            "serverShortName": "루미"
+        },
+        {
+            "raceId": 2,
+            "serverId": 2005,
+            "serverName": "마르쿠탄",
+            "serverShortName": "마르"
+        },
+        {
+            "raceId": 2,
+            "serverId": 2006,
+            "serverName": "아스펠",
+            "serverShortName": "아스"
+        },
+        {
+            "raceId": 2,
+            "serverId": 2007,
+            "serverName": "에레슈키갈",
+            "serverShortName": "에레"
+        },
+        {
+            "raceId": 2,
+            "serverId": 2008,
+            "serverName": "브리트라",
+            "serverShortName": "브리"
+        },
+        {
+            "raceId": 2,
+            "serverId": 2009,
+            "serverName": "네몬",
+            "serverShortName": "네몬"
+        },
+        {
+            "raceId": 2,
+            "serverId": 2010,
+            "serverName": "하달",
+            "serverShortName": "하달"
+        },
+        {
+            "raceId": 2,
+            "serverId": 2011,
+            "serverName": "루드라",
+            "serverShortName": "루드"
+        },
+        {
+            "raceId": 2,
+            "serverId": 2012,
+            "serverName": "울고른",
+            "serverShortName": "울고"
+        },
+        {
+            "raceId": 2,
+            "serverId": 2013,
+            "serverName": "무닌",
+            "serverShortName": "무닌"
+        },
+        {
+            "raceId": 2,
+            "serverId": 2014,
+            "serverName": "오다르",
+            "serverShortName": "오다"
+        },
+        {
+            "raceId": 2,
+            "serverId": 2015,
+            "serverName": "젠카카",
+            "serverShortName": "젠카"
+        },
+        {
+            "raceId": 2,
+            "serverId": 2016,
+            "serverName": "크로메데",
+            "serverShortName": "크로"
+        },
+        {
+            "raceId": 2,
+            "serverId": 2017,
+            "serverName": "콰이링",
+            "serverShortName": "콰이"
+        },
+        {
+            "raceId": 2,
+            "serverId": 2018,
+            "serverName": "바바룽",
+            "serverShortName": "바바"
+        },
+        {
+            "raceId": 2,
+            "serverId": 2019,
+            "serverName": "파프니르",
+            "serverShortName": "파프"
+        },
+        {
+            "raceId": 2,
+            "serverId": 2020,
+            "serverName": "인드나흐",
+            "serverShortName": "인드"
+        },
+        {
+            "raceId": 2,
+            "serverId": 2021,
+            "serverName": "이스할겐",
+            "serverShortName": "이스"
+        }
+    ]
+}
+
+https://aion2.plaync.com/api/gameinfo/classes?lang=ko
+{
+    "classList": [
+        {
+            "id": 2,
+            "name": "Gladiator",
+            "text": "검성"
+        },
+        {
+            "id": 3,
+            "name": "Templar",
+            "text": "수호성"
+        },
+        {
+            "id": 5,
+            "name": "Assassin",
+            "text": "살성"
+        },
+        {
+            "id": 4,
+            "name": "Ranger",
+            "text": "궁성"
+        },
+        {
+            "id": 7,
+            "name": "Sorcerer",
+            "text": "마도성"
+        },
+        {
+            "id": 6,
+            "name": "Elementalist",
+            "text": "정령성"
+        },
+        {
+            "id": 8,
+            "name": "Cleric",
+            "text": "치유성"
+        },
+        {
+            "id": 9,
+            "name": "Chanter",
+            "text": "호법성"
+        }
+    ]
+}
+
+https://aion2.plaync.com/api/gameinfo/pcdata?lang=ko
+{
+    "pcDataList": [
+        {
+            "id": 5,
+            "genderName": "Male",
+            "raceName": "Light",
+            "className": "GLADIATOR",
+            "classText": "검성"
+        },
+        {
+            "id": 6,
+            "genderName": "Female",
+            "raceName": "Light",
+            "className": "GLADIATOR",
+            "classText": "검성"
+        },
+        {
+            "id": 7,
+            "genderName": "Male",
+            "raceName": "Dark",
+            "className": "GLADIATOR",
+            "classText": "검성"
+        },
+        {
+            "id": 8,
+            "genderName": "Female",
+            "raceName": "Dark",
+            "className": "GLADIATOR",
+            "classText": "검성"
+        },
+        {
+            "id": 9,
+            "genderName": "Male",
+            "raceName": "Light",
+            "className": "TEMPLAR",
+            "classText": "수호성"
+        },
+        {
+            "id": 10,
+            "genderName": "Female",
+            "raceName": "Light",
+            "className": "TEMPLAR",
+            "classText": "수호성"
+        },
+        {
+            "id": 11,
+            "genderName": "Male",
+            "raceName": "Dark",
+            "className": "TEMPLAR",
+            "classText": "수호성"
+        },
+        {
+            "id": 12,
+            "genderName": "Female",
+            "raceName": "Dark",
+            "className": "TEMPLAR",
+            "classText": "수호성"
+        },
+        {
+            "id": 13,
+            "genderName": "Male",
+            "raceName": "Light",
+            "className": "RANGER",
+            "classText": "궁성"
+        },
+        {
+            "id": 14,
+            "genderName": "Female",
+            "raceName": "Light",
+            "className": "RANGER",
+            "classText": "궁성"
+        },
+        {
+            "id": 15,
+            "genderName": "Male",
+            "raceName": "Dark",
+            "className": "RANGER",
+            "classText": "궁성"
+        },
+        {
+            "id": 16,
+            "genderName": "Female",
+            "raceName": "Dark",
+            "className": "RANGER",
+            "classText": "궁성"
+        },
+        {
+            "id": 17,
+            "genderName": "Male",
+            "raceName": "Light",
+            "className": "ASSASSIN",
+            "classText": "살성"
+        },
+        {
+            "id": 18,
+            "genderName": "Female",
+            "raceName": "Light",
+            "className": "ASSASSIN",
+            "classText": "살성"
+        },
+        {
+            "id": 19,
+            "genderName": "Male",
+            "raceName": "Dark",
+            "className": "ASSASSIN",
+            "classText": "살성"
+        },
+        {
+            "id": 20,
+            "genderName": "Female",
+            "raceName": "Dark",
+            "className": "ASSASSIN",
+            "classText": "살성"
+        },
+        {
+            "id": 21,
+            "genderName": "Male",
+            "raceName": "Light",
+            "className": "ELEMENTALIST",
+            "classText": "정령성"
+        },
+        {
+            "id": 22,
+            "genderName": "Female",
+            "raceName": "Light",
+            "className": "ELEMENTALIST",
+            "classText": "정령성"
+        },
+        {
+            "id": 23,
+            "genderName": "Male",
+            "raceName": "Dark",
+            "className": "ELEMENTALIST",
+            "classText": "정령성"
+        },
+        {
+            "id": 24,
+            "genderName": "Female",
+            "raceName": "Dark",
+            "className": "ELEMENTALIST",
+            "classText": "정령성"
+        },
+        {
+            "id": 25,
+            "genderName": "Male",
+            "raceName": "Light",
+            "className": "SORCERER",
+            "classText": "마도성"
+        },
+        {
+            "id": 26,
+            "genderName": "Female",
+            "raceName": "Light",
+            "className": "SORCERER",
+            "classText": "마도성"
+        },
+        {
+            "id": 27,
+            "genderName": "Male",
+            "raceName": "Dark",
+            "className": "SORCERER",
+            "classText": "마도성"
+        },
+        {
+            "id": 28,
+            "genderName": "Female",
+            "raceName": "Dark",
+            "className": "SORCERER",
+            "classText": "마도성"
+        },
+        {
+            "id": 29,
+            "genderName": "Male",
+            "raceName": "Light",
+            "className": "CLERIC",
+            "classText": "치유성"
+        },
+        {
+            "id": 30,
+            "genderName": "Female",
+            "raceName": "Light",
+            "className": "CLERIC",
+            "classText": "치유성"
+        },
+        {
+            "id": 31,
+            "genderName": "Male",
+            "raceName": "Dark",
+            "className": "CLERIC",
+            "classText": "치유성"
+        },
+        {
+            "id": 32,
+            "genderName": "Female",
+            "raceName": "Dark",
+            "className": "CLERIC",
+            "classText": "치유성"
+        },
+        {
+            "id": 33,
+            "genderName": "Male",
+            "raceName": "Light",
+            "className": "CHANTER",
+            "classText": "호법성"
+        },
+        {
+            "id": 34,
+            "genderName": "Female",
+            "raceName": "Light",
+            "className": "CHANTER",
+            "classText": "호법성"
+        },
+        {
+            "id": 35,
+            "genderName": "Male",
+            "raceName": "Dark",
+            "className": "CHANTER",
+            "classText": "호법성"
+        },
+        {
+            "id": 36,
+            "genderName": "Female",
+            "raceName": "Dark",
+            "className": "CHANTER",
+            "classText": "호법성"
+        }
+    ]
+}
+
