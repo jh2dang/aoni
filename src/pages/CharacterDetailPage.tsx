@@ -14,9 +14,12 @@ import {
   TrendingDown,
   Image as ImageIcon,
   Zap,
+  UserPlus,
+  GitCompare,
 } from "lucide-react";
 import type { CharacterSearchResult } from "../types";
 import { fetchCharacterInfo, fetchCharacterEquipment } from "../utils/api";
+import { saveMyCharacter, hasMyCharacter, getMyCharacter } from "../utils/localStorage";
 
 export default function CharacterDetailPage() {
   const { id } = useParams<{ id: string }>();
@@ -26,6 +29,8 @@ export default function CharacterDetailPage() {
   const [equipmentData, setEquipmentData] = useState<any>(null);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+  const [isMyCharacter, setIsMyCharacter] = useState(false);
+  const [hasMyCharacterSaved, setHasMyCharacterSaved] = useState(false);
 
   useEffect(() => {
     if (!id) return;
@@ -47,6 +52,13 @@ export default function CharacterDetailPage() {
 
         setInfoData(info);
         setEquipmentData(equipment);
+
+        // Check if this character is saved as my character
+        const myCharacter = getMyCharacter();
+        if (myCharacter && myCharacter.characterId === id) {
+          setIsMyCharacter(true);
+        }
+        setHasMyCharacterSaved(hasMyCharacter());
       } catch (err) {
         setError(
           err instanceof Error
@@ -278,6 +290,54 @@ export default function CharacterDetailPage() {
             <button className="px-6 py-3 bg-sky-600 dark:bg-white text-white dark:text-slate-900 rounded-xl font-bold hover:bg-sky-700 dark:hover:bg-sky-50 transition-colors shadow-lg shadow-sky-500/20 dark:shadow-white/5">
               전적 갱신
             </button>
+            <button
+              onClick={() => {
+                if (!infoData || !equipmentData || !id) return;
+                const passedState = location.state?.character as
+                  | CharacterSearchResult
+                  | undefined;
+                const serverId = passedState?.serverId || 1001;
+                
+                saveMyCharacter(id, serverId, infoData, equipmentData);
+                setIsMyCharacter(true);
+                setHasMyCharacterSaved(true);
+                alert("내 캐릭터로 추가되었습니다.");
+              }}
+              className={`px-6 py-3 rounded-xl font-medium transition-colors border flex items-center justify-center gap-2 ${
+                isMyCharacter
+                  ? "bg-emerald-50 dark:bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 border-emerald-200 dark:border-emerald-500/20"
+                  : "bg-white dark:bg-slate-800 text-slate-700 dark:text-white hover:bg-slate-50 dark:hover:bg-slate-700 border-slate-200 dark:border-slate-700"
+              }`}
+            >
+              <UserPlus className="w-4 h-4" />
+              {isMyCharacter ? "내 캐릭터로 저장됨" : "내 캐릭터로 추가"}
+            </button>
+            {hasMyCharacterSaved && (
+              <button
+                onClick={() => {
+                  if (!infoData || !equipmentData || !id) return;
+                  const passedState = location.state?.character as
+                    | CharacterSearchResult
+                    | undefined;
+                  const serverId = passedState?.serverId || 1001;
+                  
+                  navigate(`/character/${id}/compare`, {
+                    state: {
+                      currentCharacter: {
+                        characterId: id,
+                        serverId,
+                        infoData,
+                        equipmentData,
+                      },
+                    },
+                  });
+                }}
+                className="px-6 py-3 bg-white dark:bg-slate-800 text-slate-700 dark:text-white rounded-xl font-medium hover:bg-slate-50 dark:hover:bg-slate-700 transition-colors border border-slate-200 dark:border-slate-700 flex items-center justify-center gap-2"
+              >
+                <GitCompare className="w-4 h-4" />
+                내 캐릭터와 비교
+              </button>
+            )}
             <button className="px-6 py-3 bg-white dark:bg-slate-800 text-slate-700 dark:text-white rounded-xl font-medium hover:bg-slate-50 dark:hover:bg-slate-700 transition-colors border border-slate-200 dark:border-slate-700">
               즐겨찾기
             </button>

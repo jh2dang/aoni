@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { Trophy, TrendingUp, TrendingDown, Minus, Users, Sword, Shield, Target } from "lucide-react";
+import { Trophy, TrendingUp, TrendingDown, Minus, Sword, Shield, Target } from "lucide-react";
 import { fetchRankingList, fetchServerList } from "../utils/api";
 import type { RankingListItem, ServerInfo } from "../types";
 

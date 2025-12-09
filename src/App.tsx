@@ -5,6 +5,7 @@ import CharacterDetailPage from "./pages/CharacterDetailPage";
 import DaevanionDetailPage from "./pages/DaevanionDetailPage";
 import DaevanionOptimizationPage from "./pages/DaevanionOptimizationPage";
 import RankingPage from "./pages/RankingPage";
+import CharacterComparePage from "./pages/CharacterComparePage";
 
 function App() {
   return (
@@ -14,6 +15,10 @@ function App() {
           <Route index element={<MainPage />} />
           <Route path="ranking" element={<RankingPage />} />
           <Route path="character/:id" element={<CharacterDetailPage />} />
+          <Route
+            path="character/:id/compare"
+            element={<CharacterComparePage />}
+          />
           <Route
             path="character/:characterId/daevanion"
             element={<DaevanionDetailPage />}
