@@ -2,6 +2,7 @@ import type {
   CharacterInfoResponse,
   CharacterEquipmentResponse,
   SearchResponse,
+  DaevanionDetailResponse,
 } from "../types";
 
 // 개발 환경에서는 프록시를 통해 요청하므로 상대 경로 사용
@@ -52,6 +53,23 @@ export async function fetchCharacterEquipment(
   if (!response.ok) {
     throw new Error(
       `Failed to fetch character equipment: ${response.statusText}`
+    );
+  }
+  return response.json();
+}
+
+export async function fetchDaevanionDetail(
+  characterId: string,
+  serverId: number = 1001,
+  boardId: number
+): Promise<DaevanionDetailResponse> {
+  const url = `${API_BASE}/character/daevanion/detail?lang=ko&characterId=${encodeURIComponent(
+    characterId
+  )}&serverId=${serverId}&boardId=${boardId}`;
+  const response = await fetch(url);
+  if (!response.ok) {
+    throw new Error(
+      `Failed to fetch daevanion detail: ${response.statusText}`
     );
   }
   return response.json();

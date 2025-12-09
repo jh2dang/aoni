@@ -179,3 +179,22 @@ export interface CharacterEquipmentResponse {
   };
   petwing: PetWing;
 }
+
+export interface DaevanionNode {
+  boardId: number;
+  nodeId: number;
+  name: string;
+  row: number;
+  col: number;
+  grade: "Common" | "Rare" | "Unique" | "Legend" | "None";
+  type: "Stat" | "SkillLevel" | "Start" | "None";
+  icon: string;
+  effectList: Array<{ desc: string }>;
+  open: number;
+}
+
+export interface DaevanionDetailResponse {
+  nodeList: DaevanionNode[];
+  openStatEffectList: Array<{ desc: string }>;
+  openSkillEffectList: Array<{ desc: string }>;
+}

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useParams, useLocation } from "react-router-dom";
+import { useParams, useLocation, useNavigate } from "react-router-dom";
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import {
   User,
@@ -20,6 +20,7 @@ import { fetchCharacterInfo, fetchCharacterEquipment } from "../utils/api";
 export default function CharacterDetailPage() {
   const { id } = useParams<{ id: string }>();
   const location = useLocation();
+  const navigate = useNavigate();
   const [infoData, setInfoData] = useState<any>(null);
   const [equipmentData, setEquipmentData] = useState<any>(null);
   const [isLoading, setIsLoading] = useState(true);
@@ -706,9 +707,17 @@ export default function CharacterDetailPage() {
               </div>
               <div className="grid grid-cols-2 gap-3">
                 {daevanion.map((board: any, i: number) => (
-                  <div
+                  <button
                     key={i}
-                    className="p-4 rounded-xl bg-white dark:bg-[#151A29] border border-slate-200 dark:border-slate-800"
+                    onClick={() => {
+                      navigate(`/character/${id}/daevanion`, {
+                        state: {
+                          character: location.state?.character,
+                          serverId: profile.serverId,
+                        },
+                      });
+                    }}
+                    className="p-4 rounded-xl bg-white dark:bg-[#151A29] border border-slate-200 dark:border-slate-800 hover:border-slate-300 dark:hover:border-slate-600 transition-colors text-left"
                   >
                     <div className="flex items-center gap-3 mb-2">
                       {board.icon && (
@@ -725,7 +734,7 @@ export default function CharacterDetailPage() {
                     <div className="text-xs text-slate-500 dark:text-slate-400">
                       {board.openNodeCount}/{board.totalNodeCount} 노드
                     </div>
-                  </div>
+                  </button>
                 ))}
               </div>
             </div>
