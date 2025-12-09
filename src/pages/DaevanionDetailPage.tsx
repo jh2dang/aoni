@@ -1,19 +1,63 @@
 import { useEffect, useState } from "react";
 import { useParams, useLocation, useNavigate } from "react-router-dom";
 import { ArrowLeft, Filter } from "lucide-react";
-import { fetchDaevanionDetail } from "../utils/api";
+import { fetchDaevanionDetail, fetchCharacterInfo } from "../utils/api";
 import type { DaevanionDetailResponse, DaevanionNode } from "../types";
 
-const BOARD_NAMES: Record<number, string> = {
-  71: "네자칸",
-  72: "지켈",
-  73: "바이젤",
-  74: "트리니엘",
-  75: "아리엘",
-  76: "아스펠",
+// 직업별 보드 ID 범위
+const CLASS_BOARD_RANGES: Record<string, { start: number; end: number }> = {
+  치유성: { start: 71, end: 76 },
+  마도성: { start: 61, end: 66 },
+  정령성: { start: 51, end: 56 },
+  살성: { start: 41, end: 46 },
+  궁성: { start: 31, end: 36 },
+  수호성: { start: 21, end: 26 },
+  검성: { start: 11, end: 16 },
+  호법성: { start: 81, end: 86 },
 };
 
-const BOARD_IDS = [71, 72, 73, 74, 75, 76];
+// 보드 이름 (모든 직업 공통)
+const BOARD_NAME_LIST = ["네자칸", "지켈", "바이젤", "트리니엘", "아리엘", "아스펠"];
+
+// 보드 ID에 따른 이름 매핑 함수
+const getBoardName = (boardId: number): string => {
+  // 각 직업별 보드 ID 범위에서 인덱스 계산
+  const ranges = [
+    { start: 11, end: 16 }, // 검성
+    { start: 21, end: 26 }, // 수호성
+    { start: 31, end: 36 }, // 궁성
+    { start: 41, end: 46 }, // 살성
+    { start: 51, end: 56 }, // 정령성
+    { start: 61, end: 66 }, // 마도성
+    { start: 71, end: 76 }, // 치유성
+    { start: 81, end: 86 }, // 호법성
+  ];
+
+  for (const range of ranges) {
+    if (boardId >= range.start && boardId <= range.end) {
+      const index = boardId - range.start;
+      return BOARD_NAME_LIST[index] || `보드${index + 1}`;
+    }
+  }
+
+  return `보드${boardId}`;
+};
+
+// 직업명에서 보드 ID 범위를 가져오는 함수
+const getBoardIdsForClass = (className: string): number[] => {
+  // 직업명에서 "성"으로 끝나는 부분을 찾아서 매핑
+  const classKey = Object.keys(CLASS_BOARD_RANGES).find((key) =>
+    className.includes(key)
+  );
+  
+  if (classKey && CLASS_BOARD_RANGES[classKey]) {
+    const { start, end } = CLASS_BOARD_RANGES[classKey];
+    return Array.from({ length: end - start + 1 }, (_, i) => start + i);
+  }
+  
+  // 기본값: 치유성 (71~76)
+  return [71, 72, 73, 74, 75, 76];
+};
 
 // 활성화된 노드용 색상 (더 밝게)
 const GRADE_COLORS_OPEN: Record<string, string> = {
@@ -45,6 +89,7 @@ export default function DaevanionDetailPage() {
   const { characterId } = useParams<{ characterId: string }>();
   const location = useLocation();
   const navigate = useNavigate();
+  const [boardIds, setBoardIds] = useState<number[]>([71, 72, 73, 74, 75, 76]);
   const [selectedBoardId, setSelectedBoardId] = useState<number>(71);
   const [data, setData] = useState<DaevanionDetailResponse | null>(null);
   const [isLoading, setIsLoading] = useState(true);
@@ -60,6 +105,26 @@ export default function DaevanionDetailPage() {
     (location.state?.character?.serverId as number) ||
     (location.state?.serverId as number) ||
     1001;
+
+  // 캐릭터 정보를 가져와서 직업에 맞는 보드 ID 범위 설정
+  useEffect(() => {
+    if (!characterId) return;
+
+    const loadCharacterInfo = async () => {
+      try {
+        const characterInfo = await fetchCharacterInfo(characterId, serverId);
+        const className = characterInfo.profile.className;
+        const ids = getBoardIdsForClass(className);
+        setBoardIds(ids);
+        setSelectedBoardId(ids[0]); // 첫 번째 보드를 기본 선택
+      } catch (err) {
+        console.error("Failed to load character info:", err);
+        // 에러 발생 시 기본값 사용
+      }
+    };
+
+    loadCharacterInfo();
+  }, [characterId, serverId]);
 
   useEffect(() => {
     if (!characterId) return;
@@ -190,7 +255,7 @@ export default function DaevanionDetailPage() {
 
       {/* Board Tabs */}
       <div className="mb-8 flex gap-3 overflow-x-auto pb-2">
-        {BOARD_IDS.map((boardId) => (
+        {boardIds.map((boardId) => (
           <button
             key={boardId}
             onClick={() => setSelectedBoardId(boardId)}
@@ -200,7 +265,7 @@ export default function DaevanionDetailPage() {
                 : "bg-white dark:bg-[#151A29] text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-800 hover:bg-slate-50 dark:hover:bg-slate-800 shadow-sm dark:shadow-none"
             }`}
           >
-            {BOARD_NAMES[boardId]}
+            {getBoardName(boardId)}
           </button>
         ))}
       </div>
@@ -339,7 +404,7 @@ export default function DaevanionDetailPage() {
                       // Extract stat value from effect description
                       // For center node, always show board name
                       const statText = isCenterNode
-                        ? BOARD_NAMES[selectedBoardId]
+                        ? getBoardName(selectedBoardId)
                         : node.effectList.length > 0 
                         ? node.effectList[0].desc 
                         : node.name || "";
@@ -368,7 +433,7 @@ export default function DaevanionDetailPage() {
                           {/* Always show board name for center node */}
                           {isCenterNode ? (
                             <div className="text-[9px] font-bold text-center leading-tight px-0.5 text-white drop-shadow-[0_0_3px_rgba(0,0,0,1)] drop-shadow-[0_2px_4px_rgba(0,0,0,0.9)]">
-                              {BOARD_NAMES[selectedBoardId]}
+                              {getBoardName(selectedBoardId)}
                             </div>
                           ) : (
                             statText && !isEmpty && (
