@@ -1,0 +1,7 @@
+# API 프록시 리다이렉트
+/api/*  https://aion2.plaync.com/api/:splat  200
+/ko-kr/api/*  https://aion2.plaync.com/ko-kr/api/:splat  200
+
+# SPA 라우팅 - 모든 요청을 index.html로 리다이렉트
+/*    /index.html   200
+
